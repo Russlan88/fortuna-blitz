@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import { ContactsStyle } from './contact-us';
+import { ContactsStyle, SubContainer } from './contact-us';
 import Map from '../map/map';
-import Form from '../form/form';
-import Media from '../media/media';
+import Form from '../form/form.jsx';
+import Media from '../media/media.jsx';
 
 const Contacts = () => {
 	return (
@@ -20,14 +20,10 @@ const Contacts = () => {
 					Gravida sit amet dolor vel molestie tempor sodales arcu aliquet
 				</p>
 
-				<div className="address-block">
-					<h5 className="address-block__title">Contact Address</h5>
-					<p className="address-block__paragraph">
-						Harjumaa, Tallinn linn, Narva mnt 13a, 10151
-					</p>
-				</div>
-				<Form />
-				<Media />
+				<SubContainer>
+					<Form />
+					<Media />
+				</SubContainer>
 			</div>
 		</ContactsStyle>
 	);
