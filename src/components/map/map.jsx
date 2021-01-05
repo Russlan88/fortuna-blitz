@@ -1,17 +1,192 @@
 /** @format */
 
 import React from 'react';
+import GoogleMapReact from 'google-map-react';
+
 // import MapFrame from './map';
 
-const Map = () => {
-	return (
-		<iframe
-			title="map"
-			style={{ width: '520px', height: '700px' }}
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17504.225444987303!2d30.540838495905618!3d50.46619219184563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce456d316fcd%3A0x12b64d3da5375a69!2sSt.%20Michael&#39;s%20Golden-Domed%20Monastery!5e0!3m2!1sen!2sua!4v1608377965786!5m2!1sen!2sua"
-			aria-hidden="false"
-		></iframe>
-	);
-};
+class SimpleMap extends React.Component {
+	static defaultProps = {
+		center: {
+			lat: 59.95,
+			lng: 30.33,
+		},
+		zoom: 11,
+	};
 
-export default Map;
+	render() {
+		return (
+			// Important! Always set the container height explicitly
+
+			<GoogleMapReact
+				bootstrapURLKeys={{ key: 'AIzaSyCYhndImk525k2BF2sOvBRdQaIppzif_aA' }}
+				defaultCenter={this.props.center}
+				defaultZoom={this.props.zoom}
+				options={{
+					styles: [
+						{
+							elementType: 'geometry',
+							stylers: [
+								{
+									color: '#f5f5f5',
+								},
+							],
+						},
+						{
+							elementType: 'labels.icon',
+							stylers: [
+								{
+									visibility: 'off',
+								},
+							],
+						},
+						{
+							elementType: 'labels.text.fill',
+							stylers: [
+								{
+									color: '#616161',
+								},
+							],
+						},
+						{
+							elementType: 'labels.text.stroke',
+							stylers: [
+								{
+									color: '#f5f5f5',
+								},
+							],
+						},
+						{
+							featureType: 'administrative.land_parcel',
+							elementType: 'labels.text.fill',
+							stylers: [
+								{
+									color: '#bdbdbd',
+								},
+							],
+						},
+						{
+							featureType: 'poi',
+							elementType: 'geometry',
+							stylers: [
+								{
+									color: '#eeeeee',
+								},
+							],
+						},
+						{
+							featureType: 'poi',
+							elementType: 'labels.text.fill',
+							stylers: [
+								{
+									color: '#757575',
+								},
+							],
+						},
+						{
+							featureType: 'poi.park',
+							elementType: 'geometry',
+							stylers: [
+								{
+									color: '#e5e5e5',
+								},
+							],
+						},
+						{
+							featureType: 'poi.park',
+							elementType: 'labels.text.fill',
+							stylers: [
+								{
+									color: '#9e9e9e',
+								},
+							],
+						},
+						{
+							featureType: 'road',
+							elementType: 'geometry',
+							stylers: [
+								{
+									color: '#ffffff',
+								},
+							],
+						},
+						{
+							featureType: 'road.arterial',
+							elementType: 'labels.text.fill',
+							stylers: [
+								{
+									color: '#757575',
+								},
+							],
+						},
+						{
+							featureType: 'road.highway',
+							elementType: 'geometry',
+							stylers: [
+								{
+									color: '#dadada',
+								},
+							],
+						},
+						{
+							featureType: 'road.highway',
+							elementType: 'labels.text.fill',
+							stylers: [
+								{
+									color: '#616161',
+								},
+							],
+						},
+						{
+							featureType: 'road.local',
+							elementType: 'labels.text.fill',
+							stylers: [
+								{
+									color: '#9e9e9e',
+								},
+							],
+						},
+						{
+							featureType: 'transit.line',
+							elementType: 'geometry',
+							stylers: [
+								{
+									color: '#e5e5e5',
+								},
+							],
+						},
+						{
+							featureType: 'transit.station',
+							elementType: 'geometry',
+							stylers: [
+								{
+									color: '#eeeeee',
+								},
+							],
+						},
+						{
+							featureType: 'water',
+							elementType: 'geometry',
+							stylers: [
+								{
+									color: '#c9c9c9',
+								},
+							],
+						},
+						{
+							featureType: 'water',
+							elementType: 'labels.text.fill',
+							stylers: [
+								{
+									color: '#9e9e9e',
+								},
+							],
+						},
+					],
+				}}
+			></GoogleMapReact>
+		);
+	}
+}
+
+export default SimpleMap;
