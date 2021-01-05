@@ -5,7 +5,8 @@ import { blackColor } from '../../assets/css/variables';
 export const ContactsStyle = styled.div`
 
 	display: grid;
-	grid-template-columns: 520px 1fr;
+	// grid-template-columns: 520px 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
 	grid-column-gap: 80px;
 	
 
@@ -78,6 +79,7 @@ export const ContactsStyle = styled.div`
 
 export const SubContainer = styled.div`
 	display: grid;
-	grid-template-columns: 350px 1fr;
+	// grid-template-columns: 350px 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	grid-column-gap: 30px;
 `
