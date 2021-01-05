@@ -5,7 +5,7 @@ const MediaItem = styled.li`
 	margin: 0px;
     padding: 0px;
     display: grid;
-    grid-template-columns: repeat(3, 36px);
+	grid-template-columns: repeat(3, 36px);
     justify-content: flex-start;
 	align-items: center;
 	grid-column-gap: 10px;
