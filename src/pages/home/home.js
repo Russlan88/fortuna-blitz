@@ -70,6 +70,10 @@ import styled from 'styled-components';
     .image-figure {
         height: 100vh;
         overflow: hidden;
+
+        img {
+            width: 100%;
+        }
     }
 `
 
