@@ -2,13 +2,16 @@ import React from 'react';
 
 import { GloabalStyles } from './assets/css/basic';
 
-import Contacts from './components/contact-us/contact-us.jsx';
+
+import Home from './pages/home/home.jsx';
+// import Contacts from './components/contact-us/contact-us.jsx';
 
 function App() {
   return (
     <div className="App">
       <GloabalStyles />
-      <Contacts />
+      <Home />
+      {/* <Contacts /> */}
     </div>
   );
 }
