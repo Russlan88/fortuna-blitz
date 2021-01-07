@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import { ContactsStyle, SubContainer } from './contact-us';
-import Maps from '../map/map.jsx';
-import Form from '../form/form.jsx';
-import Media from '../media/media.jsx';
+import { ContactsStyle, SubContainer } from '../contacts/contactsUs';
+import Maps from '../../components/map/map.jsx';
+import Form from '../../components/form/form.jsx';
+import Media from '../../components/media/media.jsx';
 
 const Contacts = () => {
 	return (

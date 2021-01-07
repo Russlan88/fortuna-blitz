@@ -1,33 +1,23 @@
 /** @format */
 
-import React, { Component } from 'react';
+import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
 import MapFrame from './map.js';
 
-class Maps extends Component {
-	static defaultProps = {
-		center: {
-			lat: 59.95,
-			lng: 30.33,
-		},
-		zoom: 11,
-	};
+const Maps = () => {
+	return (
+		// Important! Always set the container height explicitly
 
-	render() {
-		return (
-			// Important! Always set the container height explicitly
-
-			<GoogleMapReact
-				bootstrapURLKeys={{ key: 'AIzaSyCYhndImk525k2BF2sOvBRdQaIppzif_aA' }}
-				defaultCenter={this.props.center}
-				defaultZoom={this.props.zoom}
-				options={{
-					styles: MapFrame,
-				}}
-			></GoogleMapReact>
-		);
-	}
-}
+		<GoogleMapReact
+			bootstrapURLKeys={{ key: 'AIzaSyCYhndImk525k2BF2sOvBRdQaIppzif_aA' }}
+			defaultCenter={{ lat: 40.756795, lng: -73.954298 }}
+			defaultZoom={10}
+			options={{
+				styles: MapFrame,
+			}}
+		></GoogleMapReact>
+	);
+};
 
 export default Maps;

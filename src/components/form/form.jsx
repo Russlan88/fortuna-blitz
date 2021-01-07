@@ -1,7 +1,7 @@
 /** @format */
 
 import React from 'react';
-import ContactForm from './form';
+import ContactForm from './form.js';
 
 const Form = () => {
 	return (

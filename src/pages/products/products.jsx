@@ -9,7 +9,7 @@ import {
 	ProductDescriptionStyled,
 	RightContainer,
 	ContainerWrapper,
-} from './products.js';
+} from './productStyled.js';
 import {
 	SmallTitle,
 	DoubleColorTitle,
@@ -18,7 +18,7 @@ import {
 import data from './data.json';
 import { ReactComponent as ProductIcon } from '../../assets/images/product__icon.svg';
 
-export const ProductsPage = (props) => {
+const Products = () => {
 	const product = data.map((data) => {
 		return (
 			<ProductItemStyled key={data.id}>
@@ -66,3 +66,5 @@ export const ProductsPage = (props) => {
 		</div>
 	);
 };
+
+export default Products;
