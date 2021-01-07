@@ -20,7 +20,7 @@ const Home = () => {
 					Discover a better way of redefining company goals and achieving higher
 					conversion rates the natural way.
 				</p>
-				<Button danger>Find out more</Button>
+				<Button>Find out more</Button>
 			</div>
 			<div className="image-figure">
 				<img

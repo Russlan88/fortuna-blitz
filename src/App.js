@@ -4,14 +4,16 @@ import { GloabalStyles } from './assets/css/basic';
 
 
 import Home from './pages/home/home.jsx';
-// import Contacts from './components/contact-us/contact-us.jsx';
+import {ProductsPage} from './pages/products/products.jsx';
+import Contacts from './components/contact-us/contact-us.jsx';
 
 function App() {
   return (
     <div className="App">
       <GloabalStyles />
       <Home />
-      {/* <Contacts /> */}
+      <ProductsPage />
+      <Contacts />
     </div>
   );
 }
