@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import ContactForm from './form.js';
+import NumberFormat from 'react-number-format';
 import { db } from '../firebase';
 
 import { Button } from '../../assets/css/basic';
@@ -63,17 +64,32 @@ const Form = () => {
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
 				/>
+
+				<label htmlFor="phone">Phone number</label>
+
+				<NumberFormat
+					id="phone"
+					format="+##(###) ###-####"
+					type="tel"
+					placeholder="+__(___) ___-____"
+					value={phone}
+					onChange={(e) => setPhone(e.target.value)}
+					allowEmptyFormatting
+					mask="_"
+				/>
+
 				<textarea
 					placeholder="Message"
 					value={message}
 					onChange={(e) => setMessage(e.target.value)}
 				></textarea>
-				<input
+
+				{/* <input
 					type="tel"
 					placeholder="(___) ___-____"
 					value={phone}
 					onChange={(e) => setPhone(e.target.value)}
-				/>
+				/> */}
 				<Button type="submit" className="secondary">
 					Submit
 				</Button>
