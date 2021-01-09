@@ -4,6 +4,7 @@ export const ProductStyled = styled.ul`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
+    padding-left: 0px;
 `;
 
 export const ProductFigureStyled = styled.img`
@@ -50,12 +51,25 @@ export const ProductItemStyled = styled.li`
             bottom: -1px;
         }
     }
+
+    @media (max-width: 767px) {
+        height: auto;
+    }
 `;
 
 export const ContainerWrapper = styled.div`
     display: grid;
     grid-template-columns: 720px 1fr;
     margin-bottom: 80px;
+
+    @media (max-width: 1170px) {
+        display: flex;
+        grid-template-columns: 720px 1fr;
+        margin-bottom: 80px;
+        flex-direction: column;
+        padding: 0 40px;
+    }
+
 `;
 
 export const RightContainer = styled.div`

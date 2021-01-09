@@ -57,10 +57,58 @@ export const Button = styled.button`
     font-weight: 600;
     text-decoration: none;
     position: relative;
-    max-width: 300px;
     cursor: pointer;
 
+    &::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(90deg,#000 50%,#000 50%);
+        display: inline-block;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -18px;
+        width: 54px;
+        height: 2px;
+        transform-origin: left;
+        will-change: transform;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
+   
+    &::after {
+        content: '\\276F';
+        position: absolute;
+        display: inline-block;
+        right: -23px;
+        top: 51%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 11px;
+        line-height: 1;
+        color: #000;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+        
+    &.primary{
+        margin: 40px 0;
+        background: ${lightGray};
+        max-width: 250px;
+        }
+    }
+
+    &.secondary {
+        background: ${redColor};
+        color: ${lightGray};
+
+        &::before {
+            background: linear-gradient(90deg,#fff 68%,#000 50%);
+        }
+    }
+
 `;
 
 

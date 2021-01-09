@@ -80,6 +80,6 @@ export const ContactsStyle = styled.div`
 export const SubContainer = styled.div`
 	display: grid;
 	// grid-template-columns: 350px 1fr;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-column-gap: 30px;
 `

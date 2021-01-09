@@ -4,13 +4,14 @@ import React, { useState } from 'react';
 import ContactForm from './form.js';
 import { db } from '../firebase';
 
+import { Button } from '../../assets/css/basic';
+
 const Form = () => {
 	const [name, setName] = useState('');
 	const [companyName, setCompanyName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 	const [phone, setPhone] = useState('');
-	const [selectedFile, setSelectedFile] = useState('');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -22,7 +23,6 @@ const Form = () => {
 				email: email,
 				message: message,
 				phone: phone,
-				selectedFile: selectedFile,
 			})
 			.then(() => {
 				alert('Message has been submitted!');
@@ -35,7 +35,6 @@ const Form = () => {
 		setEmail('');
 		setMessage('');
 		setPhone('');
-		setSelectedFile('');
 	};
 
 	return (
@@ -53,15 +52,11 @@ const Form = () => {
 				/>
 				<input
 					type="text"
-					placeholder="Full company name (if you are representative)"
+					placeholder="Full company name"
 					value={companyName}
 					onChange={(e) => setCompanyName(e.target.value)}
 				/>
-				<input
-					type="file"
-					value={selectedFile}
-					onChange={(e) => setEmail(e.target.value)}
-				/>
+
 				<input
 					type="email"
 					placeholder="Email"
@@ -79,11 +74,10 @@ const Form = () => {
 					value={phone}
 					onChange={(e) => setPhone(e.target.value)}
 				/>
-				<button type="submit">Submit</button>
+				<Button type="submit" className="secondary">
+					Submit
+				</Button>
 			</ContactForm>
-
-			<h3 className="secondary-title">General Inquires</h3>
-			<a href="mailto:fortunablitz@gmail.com">fortunablitz@gmail.com</a>
 		</div>
 	);
 };

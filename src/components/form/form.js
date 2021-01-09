@@ -5,10 +5,12 @@ const ContactForm = styled.form`
     display: flex;
     flex-direction: column;
 
-    input {
+    input, textarea {
         position: relative;
         display: inline-block;
         width: 100%;
+        min-width: 100%;
+        max-width: 100%;
         vertical-align: top;
         margin: 0 0 35px;
         padding: 5px 0;
@@ -24,6 +26,11 @@ const ContactForm = styled.form`
         cursor: pointer;
         border: none;
         border-bottom: 1px solid ${blackColor};
+}
+
+textarea {
+    min-height: 65px;
+    overflow: auto;
 }
 `;
 
