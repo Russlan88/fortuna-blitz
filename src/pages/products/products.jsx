@@ -1,12 +1,9 @@
 /** @format */
 
 import React from 'react';
-
+import { useMediaQuery } from 'react-responsive';
 import {
 	ProductStyled,
-	ProductItemStyled,
-	ProductFigureStyled,
-	ProductDescriptionStyled,
 	RightContainer,
 	ContainerWrapper,
 } from './productStyled.js';
@@ -15,26 +12,24 @@ import {
 	DoubleColorTitle,
 	MainPararaph,
 } from '../../assets/css/variables';
-import data from './data.json';
-import { ReactComponent as ProductIcon } from '../../assets/images/product__icon.svg';
+
+import Single_product from './single-product';
+import Slider from '../../components/slider/slider.js';
+import { Swiper } from 'swiper/react';
 
 const Products = () => {
-	const product = data.map((data) => {
-		return (
-			<ProductItemStyled key={data.id}>
-				<ProductFigureStyled
-					className="products__figure"
-					src={data.img_src}
-					alt="Product"
-				/>
-				<ProductDescriptionStyled className="products__description single-item">
-					<ProductIcon />
-					<h3 className="single-item__title">{data.title}</h3>
-					<p className="single-item__description">{data.description}</p>
-				</ProductDescriptionStyled>
-			</ProductItemStyled>
-		);
-	});
+	const Desktop = ({ children }) => {
+		const isDesktop = useMediaQuery({ minWidth: 992 });
+		return isDesktop ? children : null;
+	};
+	const Tablet = ({ children }) => {
+		const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+		return isTablet ? children : null;
+	};
+	const Mobile = ({ children }) => {
+		const isMobile = useMediaQuery({ maxWidth: 767 });
+		return isMobile ? children : null;
+	};
 
 	return (
 		<div className="container">
@@ -62,7 +57,32 @@ const Products = () => {
 					</p>
 				</RightContainer>
 			</ContainerWrapper>
-			<ProductStyled>{product}</ProductStyled>
+			<Desktop>
+				<ProductStyled>{Single_product}</ProductStyled>
+			</Desktop>
+			<Tablet>
+				<Swiper
+					slidesPerView={3}
+					spaceBetween={30}
+					slidesPerGroup={3}
+					loop={true}
+					onSwiper={(swiper) => console.log(swiper)}
+					onSlideChange={() => console.log('slide change')}
+				>
+					{Slider}
+				</Swiper>
+			</Tablet>
+			<Mobile>
+				<Swiper
+					slidesPerView={1}
+					slidesPerGroup={1}
+					loop={true}
+					onSwiper={(swiper) => console.log(swiper)}
+					onSlideChange={() => console.log('slide change')}
+				>
+					{Slider}
+				</Swiper>
+			</Mobile>
 		</div>
 	);
 };

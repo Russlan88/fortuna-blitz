@@ -10,6 +10,7 @@ const Form = () => {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 	const [phone, setPhone] = useState('');
+	const [selectedFile, setSelectedFile] = useState('');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -21,6 +22,7 @@ const Form = () => {
 				email: email,
 				message: message,
 				phone: phone,
+				selectedFile: selectedFile,
 			})
 			.then(() => {
 				alert('Message has been submitted!');
@@ -33,6 +35,7 @@ const Form = () => {
 		setEmail('');
 		setMessage('');
 		setPhone('');
+		setSelectedFile('');
 	};
 
 	return (
@@ -53,6 +56,11 @@ const Form = () => {
 					placeholder="Full company name (if you are representative)"
 					value={companyName}
 					onChange={(e) => setCompanyName(e.target.value)}
+				/>
+				<input
+					type="file"
+					value={selectedFile}
+					onChange={(e) => setEmail(e.target.value)}
 				/>
 				<input
 					type="email"
