@@ -26,6 +26,10 @@ const ContactForm = styled.form`
         cursor: pointer;
         border: none;
         border-bottom: 1px solid ${blackColor};
+
+        &[type="tel"] {
+            border: none;
+        }
 }
 
 textarea {
