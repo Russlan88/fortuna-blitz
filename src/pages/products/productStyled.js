@@ -8,16 +8,20 @@ export const ProductStyled = styled.ul`
 `;
 
 export const ProductFigureStyled = styled.img`
-    width: 100%;
+    height: 100%;
     transform: scale(1.5);
     transition: all .9s;
+    width: 210px;
+    object-fit: contain;
+    margin-left: 30px;
 `;
 
 export const ProductDescriptionStyled = styled.div`
     position: absolute;
-    bottom: -160px;
+    bottom: -180px;
     width: calc(100% - 60px);
-    background: #fff;
+    background: #e01616;
+    color: #fff;
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -38,10 +42,7 @@ export const ProductItemStyled = styled.li`
     height: 365px;
     overflow: hidden;
     cursor: pointer;
-
-    &:nth-child(even) {
-        margin-top: 10%;
-    }
+    border: 1px solid #0000000f;
 
     &:hover {
         ${ProductFigureStyled}{
