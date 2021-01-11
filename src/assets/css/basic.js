@@ -104,6 +104,11 @@ export const Button = styled.button`
         background: ${redColor};
         color: ${lightGray};
 
+        &--modify{
+            width: 170px;
+            margin-top: 50px;
+        }
+
         &::before {
             background: linear-gradient(90deg,#fff 68%,#000 50%);
         }
