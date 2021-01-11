@@ -31,7 +31,7 @@ const Player = (props) => {
   return (
     <div className="container">
     <GridWrapper className="gridWrapper">
-      <img src={player.img_src} />
+      <img src={player.img_src} alt="logo"/>
         <div className="sideContainer">
         <h1>
           {player.name}
