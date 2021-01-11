@@ -43,6 +43,7 @@ export const ProductItemStyled = styled.li`
     overflow: hidden;
     cursor: pointer;
     border: 1px solid #0000000f;
+    background: #fff;
 
     &:hover {
         ${ProductFigureStyled}{
