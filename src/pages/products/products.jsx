@@ -33,7 +33,7 @@ const Products = () => {
 
 	return (
 		<div className="container">
-			<ContainerWrapper>
+			<ContainerWrapper style={{marginTop: "180px"}}>
 				<div className="container__left">
 					<SmallTitle>Find out more</SmallTitle>
 					<DoubleColorTitle>

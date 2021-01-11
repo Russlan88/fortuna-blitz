@@ -10,7 +10,7 @@ const Home = () => {
 	return (
 		<HomeStyled>
 			<div className="first-column">
-				<div className="copyrigth">&copy;2020 QODETHEMES</div>
+				<div className="copyrigth">&copy;2020 FORTUNA BLITZ</div>
 				<a href="http://www.google.com" className="contact-cta">
 					<img src={ContactIcon} alt="test" /> Sey Hello
 				</a>
