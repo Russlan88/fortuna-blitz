@@ -7,7 +7,7 @@ import Products from "../pages/products/products.js";
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
 const Main = () => (
-  <main style={{marginTop: 200}}>
+  <main>
     <Switch>
       <Route path="/products" component={Products} />
     </Switch>

@@ -11,9 +11,6 @@ const Home = () => {
 		<HomeStyled>
 			<div className="first-column">
 				<div className="copyrigth">&copy;2020 FORTUNA BLITZ</div>
-				<a href="http://www.google.com" className="contact-cta">
-					<img src={ContactIcon} alt="test" /> Sey Hello
-				</a>
 			</div>
 			<div className="second-column">
 				<h1 className="main-title">Interaction & Experience</h1>
