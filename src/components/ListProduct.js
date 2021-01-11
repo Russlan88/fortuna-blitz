@@ -7,7 +7,6 @@ import {
 	ProductFigureStyled,
     ProductDescriptionStyled,
     ProductStyled,
-    ContainerWrapper
 } from '../pages/products/productStyled.js';
 
 import { ReactComponent as ProductIcon } from '../assets/images/product__icon.svg';
