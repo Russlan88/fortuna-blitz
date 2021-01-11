@@ -54,7 +54,7 @@ import styled from 'styled-components';
 
         @media(max-width: 980px) {
             padding-left: 50px;
-            z-index: 9;
+            z-index: 8;
         }
     }
 
