@@ -80,7 +80,7 @@ const Header = ({ history }) => {
           <div className="inner-header">
             <div className="logo">
 
-              <Link to="/"><img src={Logo} style={{width: "60px", marginLeft: "130px"}} alt="Logo" /></Link>
+              <Link to="/"><img src={Logo} style={{width: "60px", marginLeft: "130px"}} alt="Logo" />{' '}Fortuna Blitz</Link>
             </div>
             <div className="menu">
               <button disabled={disabled} onClick={handleMenu}>

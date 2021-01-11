@@ -14,9 +14,15 @@ header {
 		align-items: center;
 		.logo a {
 			font-weight: 700;
-			font-size: 1rem;
+			font-size: 3rem;
 			text-decoration: none;
 			color: #000;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 480px;
+			font-family: Cormorant;
+			font-style: italic;
 		}
 		.menu {
 			button {
@@ -122,10 +128,13 @@ header {
 						h3 {
 							font-size: 1.2rem;
 							margin: 8px auto;
+							color: #000;
 						}
 						p {
 							margin: 0 auto;
 							font-size: 0.8rem;
+							color: #000;
+							line-height: 23px;
 						}
 					}
 				}
