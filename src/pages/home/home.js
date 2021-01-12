@@ -26,7 +26,7 @@ import styled from 'styled-components';
         }
 
         .copyrigth {
-            bottom: 10%;
+            bottom: 20%;
             color: rgb(158, 158, 158);
             font-weight: 500;
         }
