@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router,
+  Route,
+  Switch, Link } from "react-router-dom";
 
 import {
   staggerText,
@@ -89,6 +91,8 @@ const Hamburger = ({ state }) => {
                   </li>
                 </ul>
               </nav>
+  
+
               <div ref={el => (info = el)} className='info'>
                 <h3>Our Promise</h3>
                 <p>

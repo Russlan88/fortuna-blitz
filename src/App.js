@@ -1,36 +1,35 @@
-import React from 'react';
-// import './App.scss';
-import { Route } from 'react-router-dom';
+import * as React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
 
-import { GloabalStyles } from './assets/css/basic';
-import Header from './components/header/header';
+} from 'react-router-dom'
+
 import Home from './pages/home/home.jsx';
-import Products from './pages/products/products.js';
+import Products from './pages/products/products';
 import Contacts from './pages/contacts/contacts.jsx';
-import Main from './components/Main';
-
-const routes = [
-  {path: '/', name: 'Home', Component: Home, id: 1},
-  {path: '/products', name: 'Products', Component: Products, id: 2},
-  {path: '/contacts', name: 'Contacts', Component: Contacts, id: 3}
-]
+import SingleProduct from './pages/products/single-product';
 
 
-function App() {
+export default function App () {
   return (
-    <>
-      <Header/>
-      <Main /> 
-        <GloabalStyles />
-         {routes.map(({path, Component, id}) => (
-          <Route key={id} path={path} exact>
-            <div className="page">
-              <Component />
-              </div>
-          </Route>
-        ))} 
-    </>
-  );
-}
+    <Router>
+      <div>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/contacts">Contacts</Link></li>
+        </ul>
 
-export default App;
+        <Switch>
+          <Route exact path='/'><Home /></Route>
+          <Route path='/products'><Products /></Route>
+          <Route path='/contacts'><Contacts /></Route>
+          <Route path='/:iid'><SingleProduct /></Route>
+        </Switch>
+      </div>
+    </Router>
+  )
+}

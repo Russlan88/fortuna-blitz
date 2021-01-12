@@ -4,7 +4,7 @@ import React from 'react';
 
 import HomeStyled from './home.js';
 import { Button } from '../../assets/css/basic';
-import ContactIcon from '../../assets/images/contact__icon.png';
+// import ContactIcon from '../../assets/images/contact__icon.png';
 
 const Home = () => {
 	return (

@@ -39,11 +39,12 @@ export const GloabalStyles = createGlobalStyle`
         font-weight: 400;
     }
 
-    .container {
+`;
+
+export const Container  = styled.div`
         width: 100%;
         max-width: 1170px;
         margin: 0 auto;
-    }
 `;
 
 export const Button = styled.button`

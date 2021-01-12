@@ -1,48 +1,43 @@
-// import React from 'react'
-// import ProductAPI from '../../components/data/data';
-// import { Link } from "react-router-dom";
-// import {
-// 	ProductItemStyled,
-// 	ProductFigureStyled,
-// 	ProductDescriptionStyled,
-// } from './productStyled.js';
+import React from 'react';
+import {
+    useParams, Link
+  } from 'react-router-dom';
 
-// import { ReactComponent as ProductIcon } from '../../assets/images/product__icon.svg';
+  import styled from 'styled-components';
 
-// const Player = (props) => {
-//     const player = ProductAPI.get(parseInt(props.match.params.number, 10));
-//     if (!player) {
-//       return <div>Sorry, but the player was not found</div>;
-//     }
-//     return (
-//       <div>
-//         single product
-//         <h1>
-//           {player.name} (#{player.number})
-//         </h1>
-//         <h2>Position: {player.position}</h2>
-//         <Link to="/products">Back</Link>
-//       </div>
-//     );
-//   };
+  import { Button, Container } from '../../assets/css/basic.js';
+
+import data from '../../components/data/data.json';
+
+const GridWrapper = styled.div`
+  display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-gap: 85px;
+    img {
+      width: 100%;
+    }
+    p {
+      line-height: 26px;
+    }
+`
+
+const Invoice = () => {
+    // @ts-ignore
+    const { iid } = useParams()
+    const { img, description, title } = data.find((inv) => inv.id === String(iid))
   
-//   export default Player;
+    return (
+      <Container>
+        <GridWrapper>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <img src={img} alt={title}/>
+          <Link to="/products"> <Button type="submit" className="secondary secondary--modify">
+            Back
+          </Button></Link>
+        </GridWrapper>
+      </Container>
+    )
+  }
 
-// //  const Single_product = data.map((data) => {
-// //     return (
-// //         <ProductItemStyled key={data.id}>
-// //             <ProductFigureStyled
-// //                 className="products__figure"
-// //                 src={data.img_src}
-// //                 alt={data.title}
-// //             />
-// //             <ProductDescriptionStyled className="products__description single-item">
-// //                 <ProductIcon />
-// //                 <h3 className="single-item__title">{data.title}</h3>
-// //                 <p className="single-item__description">{data.description}</p>
-// //             </ProductDescriptionStyled>
-// //         </ProductItemStyled>
-// //     );
-// // });
-
-// // export default Single_product;
+  export default Invoice;

@@ -1,22 +1,53 @@
 /** @format */
-
 import React from 'react';
+import {
+    Link
+  } from 'react-router-dom'
+
+  import { GloabalStyles } from '../../assets/css/basic.js';
+
+  import data from '../../components/data/data.json';
+  import {
+    ProductStyled,
+    ProductItemStyled,
+    ProductFigureStyled,
+    ProductDescriptionStyled,
+  } from './productStyled.js';
+  import { ReactComponent as ProductIcon } from '../../assets/images/product__icon.svg';
+ 
+
+// import { Switch, Route } from "react-router-dom";
+// import ListProduct from "../../components/ListProduct";
+// import SingleProduct from "../../components/SingleProduct.js";
 
 
-import { Switch, Route } from "react-router-dom";
-import ListProduct from "../../components/ListProduct";
-import Single from "../../components/SingleProduct.js";
 
+const Products = () => (
+    <React.Fragment>
+    <GloabalStyles />
+    <div className="container">
+      <h2>Products</h2>
+      <ProductStyled>
+        {data.map(({ id, description, img, title }) => (
+          <ProductItemStyled key={id}>
+          <Link to={`/${id}`}>
+				<ProductFigureStyled
+					className="products__figure"
+					src={img}
+					alt={title}
+				/>
+				<ProductDescriptionStyled className="products__description single-item">
+					<ProductIcon />
+					<h3 className="single-item__title">{title}</h3>
+					<p className="single-item__description">{description}</p>
+				</ProductDescriptionStyled>
+        </Link>
+			</ProductItemStyled>
+    
+        ))}
+      </ProductStyled>
+      </div>
+    </React.Fragment>
+)
 
-
-const Product = () => (
-	<React.Fragment>
-	<Switch>
-	
-	  <Route exact path="/products" component={ListProduct} />
-	  <Route path="/products/:number" component={Single} />
-	</Switch>
-	</React.Fragment>
-  );
-  
-  export default Product;
+export default Products;
