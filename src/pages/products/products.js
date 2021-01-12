@@ -4,7 +4,7 @@ import {
     Link
   } from 'react-router-dom'
 
-  import { GloabalStyles } from '../../assets/css/basic.js';
+  import { GloabalStyles, Container} from '../../assets/css/basic.js';
 
   import data from '../../components/data/data.json';
   import {
@@ -25,7 +25,7 @@ import {
 const Products = () => (
     <React.Fragment>
     <GloabalStyles />
-    <div className="container">
+    <Container>
       <h2>Products</h2>
       <ProductStyled>
         {data.map(({ id, description, img, title }) => (
@@ -46,7 +46,7 @@ const Products = () => (
     
         ))}
       </ProductStyled>
-      </div>
+      </Container>
     </React.Fragment>
 )
 
