@@ -1,97 +1,46 @@
-// import React from 'react'
-// import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/images/Logo.png';
+import * as React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
 
-// function Header() {
-//     return (
-//         <div className="hader">
-//             <img src={Logo} alt="Logo" />
-//             <NavLink to="/" exact activeStyle={{fontWeight: "bold", color: "red"}}>
-//                 Home
-//             </NavLink>
-//             <NavLink to="/products" exact activeStyle={{fontWeight: "bold", color: "red"}}>
-//                 Products
-//             </NavLink>
-//             <NavLink to="/contacts" exact activeStyle={{fontWeight: "bold", color: "red"}}>
-//                 Contact Us
-//             </NavLink>
-//         </div>
-//     )
-// }
+} from 'react-router-dom'
 
-// export default Header
+import Home from '../../pages/home/home.jsx';
+import Products from '../../pages/products/products';
+import Contacts from '../../pages/contacts/contacts.jsx';
+import SingleProduct from '../../pages/products/single-product';
 
-import React, { useState, useEffect } from "react";
-import { withRouter, Link } from "react-router-dom";
-import Hamburger from "../hamburger/hamburger";
-import './header.scss';
+import {Container} from '../../assets/css/basic';
+import LogoStyle from '../../assets/styled-components/logoStyle';
+import NavStyle from '../../assets/styled-components/navStyle';
 
-const Header = ({ history }) => {
-  // State of our Menu
-  const [state, setState] = useState({
-    initial: false,
-    clicked: null,
-    menuName: "Menu"
-  });
-  // State of our button
-  const [disabled, setDisabled] = useState(false);
 
-  //Use Effect
-  useEffect(() => {
-    //Listening for page changes.
-    history.listen(() => {
-      setState({ clicked: false, menuName: "Menu" });
-    });
-  }, [history]);
-
-  // Toggle menu
-  const handleMenu = () => {
-    disableMenu();
-    if (state.initial === false) {
-      setState({
-        initial: null,
-        clicked: true,
-        menuName: "Close"
-      });
-    } else if (state.clicked === true) {
-      setState({
-        clicked: !state.clicked,
-        menuName: "Menu"
-      });
-    } else if (state.clicked === false) {
-      setState({
-        clicked: !state.clicked,
-        menuName: "Close"
-      });
-    }
-  };
-
-  //Determine if out menu button should be disabled
-  const disableMenu = () => {
-    setDisabled(!disabled);
-    setTimeout(() => {
-      setDisabled(false);
-    }, 1200);
-  };
-
+// Header
+const Header = () => {
   return (
-    <header>
-        <div className="wrapper">
-          <div className="inner-header">
-            <div className="logo">
+      <Router>
+            <Container className="flex">
+              <LogoStyle />
+              <NavStyle>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/products">Products</Link></li>
+                <li><Link to="/contacts">Contacts</Link></li>
+              </NavStyle>
+            </Container>
 
-              <Link to="/"><img src={Logo} style={{width: "60px", marginLeft: "130px"}} alt="Logo" />{' '}Fortuna Blitz</Link>
-            </div>
-            <div className="menu">
-              <button disabled={disabled} onClick={handleMenu}>
-                {state.menuName}
-              </button>
-            </div>
-          </div>
-      </div>
-      <Hamburger state={state} />
-    </header>
+        <div className="main">
+          <Switch>
+            <Route exact path='/'><Home /></Route>
+            <Route path='/products'><Products /></Route>
+            <Route path='/contacts'><Contacts /></Route>
+            <Route path='/:iid'><SingleProduct /></Route>
+          </Switch>
+        </div>
+      </Router>
   );
-};
+}
 
-export default withRouter(Header);
+
+export default Header;

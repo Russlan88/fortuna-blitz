@@ -32,9 +32,14 @@ const Invoice = () => {
           <h2>{title}</h2>
           <p>{description}</p>
           <img src={img} alt={title}/>
-          <Link to="/products"> <Button type="submit" className="secondary secondary--modify">
+          {/* <Link to="/products">  */}
+              <Button as={Link} to="/products" type="submit" className="secondary secondary--modify">
             Back
-          </Button></Link>
+              </Button>
+              <Button as={Link} to="/contacts" type="submit" className="secondary secondary--modify">
+            Ask for full range and price
+              </Button>
+          {/* </Link> */}
         </GridWrapper>
       </Container>
     )

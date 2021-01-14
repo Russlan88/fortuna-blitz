@@ -60,14 +60,15 @@ import styled from 'styled-components';
 
     .main-title {
         font-family: Cormorant;
-        color: rgb(242, 56, 1);
+        color: hsl(145deg 81% 21%);
         letter-spacing: -3px;
         font-weight: bold;
-        font-size: 100px;
+        font-size: 5.7rem;
         margin-bottom: 0;
 
         @media(max-width: 980px) {
             background: rgba(255,255,255, 0.6);
+            font-size: 3.7rem;
             padding: 15px 0;
             margin: 70px 15px 0px 0px;
         }
@@ -77,10 +78,10 @@ import styled from 'styled-components';
         font-family: Cormorant;
         font-style: italic;
         text-align: left;
-        line-height: 32px;
+        line-height: 38px;
         letter-spacing: 0px;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 17px;
 
         @media(max-width: 980px) {
             background: rgba(255,255,255,0.6);
