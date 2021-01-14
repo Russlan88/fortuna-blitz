@@ -59,6 +59,7 @@ export const Button = styled.button`
     text-decoration: none;
     position: relative;
     cursor: pointer;
+    color: #000;
 
     &::before {
         content: "";
