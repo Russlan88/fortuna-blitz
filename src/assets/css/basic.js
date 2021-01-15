@@ -96,9 +96,10 @@ export const Button = styled.button`
     }
         
     &.primary{
-        margin: 40px 0;
+        margin: 40px 0 35px 15px;
         background: ${lightGray};
-        max-width: 250px;
+        max-width: 150px;
+        display: block;
         }
     }
 

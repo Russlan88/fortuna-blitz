@@ -9,7 +9,7 @@ import Media from '../../components/media/media.jsx';
 
 const Contacts = () => {
 	return (
-		<ContactsStyle className="container" style={{marginTop: "180px"}}>
+		<ContactsStyle>
 			<Maps />
 			<div className="contacts__main-info">
 				<h3 className="contacts__title">Contact</h3>

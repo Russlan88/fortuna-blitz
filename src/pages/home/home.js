@@ -1,16 +1,21 @@
 import styled from 'styled-components';
 
  const HomeStyled = styled.div`
-    display: grid;
-    grid-template-columns: 130px 780px 1fr;
+    display: flex;
+    ${'' /* display: grid;
+    grid-template-columns: 130px 780px 1fr; */}
 
-    @media (max-width: 980px) {
+    ${'' /* @media (max-width: 980px) {
         display: flex;
         flex-direction: column;
-    }
+    } */}
 
     .first-column {
         position: relative;
+        display: none;
+
+        @media(max-width: 640px){
+        }
 
         .copyrigth, .contact-cta {
             position: absolute;
@@ -48,13 +53,13 @@ import styled from 'styled-components';
     }
 
     .second-column {
-        align-content: center;
+        ${'' /* align-content: center;
         display: grid;
-        grid-row-gap: 40px;
+        grid-row-gap: 40px; */}
 
         @media(max-width: 980px) {
-            padding-left: 50px;
-            z-index: 8;
+            ${'' /* padding-left: 50px;
+            z-index: 8; */}
         }
     }
 
@@ -63,14 +68,22 @@ import styled from 'styled-components';
         color: hsl(145deg 81% 21%);
         letter-spacing: -3px;
         font-weight: bold;
-        font-size: 5.7rem;
-        margin-bottom: 0;
+        ${'' /* font-size: 5.7rem; */}
+        background: rgba(255,255,255, 0.6);
+        font-size: 3rem;
+        margin: 25px 15px 410px 15px;
 
-        @media(max-width: 980px) {
-            background: rgba(255,255,255, 0.6);
-            font-size: 3.7rem;
-            padding: 15px 0;
-            margin: 70px 15px 0px 0px;
+        @media(min-width: 425px) {
+            margin: 25px 15px 470px 15px;
+        }
+        
+        @media(min-width: 547px) {
+            font-size: 3.5rem;
+            letter-spacing: 0;
+        }
+       
+        @media(min-width: 725px) {
+            margin-bottom: 50px;
         }
     }
 
@@ -78,14 +91,19 @@ import styled from 'styled-components';
         font-family: Cormorant;
         font-style: italic;
         text-align: left;
-        line-height: 38px;
-        letter-spacing: 0px;
         font-weight: 500;
-        font-size: 17px;
+        ${'' /* line-height: 38px;
+        letter-spacing: 0px;
+        font-size: 17px; */}
+
+        @media(min-width:725px) {
+            width: 270px;
+        }
 
         @media(max-width: 980px) {
             background: rgba(255,255,255,0.6);
-            margin: 0 15px 0 0;
+            margin: 15px;
+            line-height: 30px;
         }
     }
 

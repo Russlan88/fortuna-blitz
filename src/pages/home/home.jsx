@@ -11,6 +11,7 @@ import VisualFirst from '../../assets/images/main__1.jpg';
 import VisualSecond from '../../assets/images/main__2.jpg';
 import VisualThird from '../../assets/images/main__3.jpg';
 import VisualCaption from '../../components/visual-caption/visual-caption';
+import VisualContainerStyle from '../../assets/styled-components/visualContainerStyle';
 // import ContactIcon from '../../assets/images/contact__icon.png';
 
 const Home = () => {
@@ -26,18 +27,14 @@ const Home = () => {
 Working with Fortuna Blitz you receive a long-term reliable partner with versatile assortment who can fulfill consumers’ demands in the best quality food on your market.
 
 				</p>
-				<Router>
-					{/* <Switch>
-						<Route exact path='/contacts'><Contacts /></Route>
-					</Switch> */}
-				</Router>
+			
 				<Button as={Link} to="/products" className="primary">Find out more</Button>
 			</div>
-			<div className="visual-caption" style={{position: 'relative'}}>
+			<VisualContainerStyle>
 				<VisualCaption src_img={VisualFirst} width={'430px'} top={'70px'} right={'40px'}/>
 				<VisualCaption src_img={VisualSecond} width={'300px'} top={'150px'} right={'355px'} zIndex={9}/>
 				<VisualCaption src_img={VisualThird} width={'360px'} top={'440px'} right={'140px'}/>
-			</div>
+			</VisualContainerStyle>
 		</HomeStyled>
 	);
 };
