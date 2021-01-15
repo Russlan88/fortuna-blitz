@@ -48,31 +48,40 @@ export const Container  = styled.div`
 `;
 
 export const Button = styled.button`
-    padding: 20px 60px;
-    border: 1px solid transparent;
-    transition: all,background-color .2s ease-out,border-color .2s ease-out;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0;
     font-family: "Work Sans",sans-serif;
     font-size: 11px;
+    line-height: 2em;
     text-transform: uppercase;
     letter-spacing: .2em;
     font-weight: 600;
     text-decoration: none;
-    position: relative;
-    cursor: pointer;
+    border-radius: 0;
+    outline: 0;
+    -webkit-transition: all,background-color .2s ease-out,border-color .2s ease-out;
+    -o-transition: all,background-color .2s ease-out,border-color .2s ease-out;
+    transition: all,background-color .2s ease-out,border-color .2s ease-out;
+    padding: 15px 36px;
     color: #000;
 
     &::before {
         content: "";
         position: absolute;
-        background: linear-gradient(90deg,#000 50%,#000 50%);
         display: inline-block;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -18px;
-        width: 54px;
+        width: 34px;
         height: 2px;
-        transform-origin: left;
-        will-change: transform;
+        right: -26px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 11px;
+        line-height: 1;
+        color: #000;
         -webkit-transition: all .2s ease-in-out;
         -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
@@ -86,14 +95,18 @@ export const Button = styled.button`
         content: '\\276F';
         position: absolute;
         display: inline-block;
-        right: -23px;
-        top: 51%;
+        color: #000;
+        top: 33%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        font-size: 11px;
-        line-height: 1;
-        color: #000;
+        right: -57px;
+        width: 34px;
+        height: 2px;
+        -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+        transform-origin: left;
+        will-change: transform;
         -webkit-transition: all .2s ease-in-out;
         -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
@@ -116,7 +129,7 @@ export const Button = styled.button`
         }
 
         &::before {
-            background: linear-gradient(90deg,#fff 68%,#000 50%);
+            background: linear-gradient(90deg,#fff 50%,#000 50%);
         }
     }
 
