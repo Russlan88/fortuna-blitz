@@ -6,6 +6,7 @@ import styled from 'styled-components';
 export const whiteColor = '#fff';
 export const lightGray = '#f4f4f4';
 export const blackColor = '#000';
+export const darkBlue = '#24365f';
 export const redColor = 'hsl(145deg 81% 21%)';
 
 export const SmallTitle = styled.h2`

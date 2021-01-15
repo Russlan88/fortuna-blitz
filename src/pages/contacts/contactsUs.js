@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { blackColor } from '../../assets/css/variables';
+import { blackColor, darkBlue } from '../../assets/css/variables';
 
 
 export const ContactsStyle = styled.div`
@@ -42,7 +42,7 @@ export const ContactsStyle = styled.div`
 		word-wrap: break-word;
 	
 		span {
-			color: #f23801;
+			color: ${darkBlue};
 		}
 	}
 	

@@ -2,19 +2,20 @@ import styled from 'styled-components';
 
  const HomeStyled = styled.div`
     display: flex;
-    ${'' /* display: grid;
-    grid-template-columns: 130px 780px 1fr; */}
 
-    ${'' /* @media (max-width: 980px) {
-        display: flex;
-        flex-direction: column;
-    } */}
+    @media(min-width: 760px){
+        display: grid;
+        grid-template-columns: 40px 780px 1fr; 
+        }
+
+     
 
     .first-column {
         position: relative;
         display: none;
 
-        @media(max-width: 640px){
+        @media(min-width: 760px){
+            display: block;
         }
 
         .copyrigth, .contact-cta {

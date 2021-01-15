@@ -28,23 +28,22 @@ const Products = () => (
     <Container>
       <h2>Products</h2>
       <ProductStyled>
-        {data.map(({ id, description, img, title }) => (
-          <ProductItemStyled key={id}>
-          <Link to={`/${id}`}>
-				<ProductFigureStyled
-					className="products__figure"
-					src={img}
-					alt={title}
-				/>
-				<ProductDescriptionStyled className="products__description single-item">
-					<ProductIcon />
-					<h3 className="single-item__title">{title}</h3>
-					<p className="single-item__description">{description}</p>
-				</ProductDescriptionStyled>
-        </Link>
-			</ProductItemStyled>
-    
-        ))}
+            {data.map(({ id, description, img, title }) => (
+              <ProductItemStyled key={id}>
+              <Link to={`/${id}`}>
+            <ProductFigureStyled
+              className="products__figure"
+              src={img}
+              alt={title}
+            />
+            <ProductDescriptionStyled className="products__description single-item">
+              <ProductIcon />
+              <h3 className="single-item__title">{title}</h3>
+              <p className="single-item__description">{description}</p>
+            </ProductDescriptionStyled>
+            </Link>
+          </ProductItemStyled>
+            ))}
       </ProductStyled>
       </Container>
     </React.Fragment>

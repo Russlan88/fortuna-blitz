@@ -1,26 +1,68 @@
 [
   {
+    "id": "Heinz",
     "title": "Heinz",
     "description": "Legendary ketchup, sauces and mayonnaise",
-    "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/Heinz.jpeg?alt=media&token=16686ca7-0a46-4408-8a97-7ced7dcf0fab",
-    "id": "product-1"
+    "main_description": "Famous for classic tastes for more than 150 years Heinz offers a wide range of high quality products. Heinz has applied all expertise to develop that unmistakable taste of Heinz across the ketchup and sauces range.  Explore the world of iconic ketchup, sauces and condiments in user friendly doy-pack. Yummy, nutritious and convenient, baby food range includes cereals, purees, and ready-to-eat meals. Made of highest quality natural ingredients to make sure your baby gets the best.",
+    "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/heinz_products.jpg?alt=media&token=15fd2bd1-8cb9-4eb7-9cbf-1e038b81ddb7",
+    "prev_images": [
+        "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fheinz_1.jpg?alt=media&token=f37aeef8-5514-45c5-b112-569af7936618",
+        "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fheinz_2.jpg?alt=media&token=d850375a-7c54-4bd5-8a78-b489608d7308",
+        "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fheinz_3.jpg?alt=media&token=4f479a41-51cf-4489-80c0-0d799c4b7f07",
+        "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fheinz_4.jpg?alt=media&token=8a707000-7d0e-4efd-9e7c-cf6db2e0de24",
+        "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fheinz_5.jpg?alt=media&token=6b023ff0-b58a-4851-b946-21ce2504ab6f",
+        "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fheinz_6.jpg?alt=media&token=9c71aa2a-85cc-4c2c-9621-10340b7f06f8"
+        ]
   },
   {
     "title": "Spilva",
     "description": "Condiments and canned vegetables",
-    "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/Spilva.jpeg?alt=media&token=b876b91a-dcad-461e-8629-2f9eaa2c65c7",
-    "id": "product-2"
+    "main_description": "Spilva is a Latvian brand which is famous for its long history and leading positions in sauces and condiments in Europe. Spilva belongs to the holding company “Orkla” - is a leading supplier of branded consumer goods in the Nordic and Baltic regions. The assortment is wide and consists of sauces, dressings, mayonnaisesand canned vegetables. Products are available in doy-packs, glass jars,glass and plastic bottles.",
+    "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/spilva_products.jpg?alt=media&token=2bcfb0d0-a20d-4cb0-b54d-df8f7916ab42",
+    "prev_images": [
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_1.jpg?alt=media&token=b2023590-eb1e-4e93-bd5e-1d4abc04eeb3",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_2.jpg?alt=media&token=64f3037e-cc47-406b-90b1-6dcac7fd6a2f",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_3.jpg?alt=media&token=ce40f75c-8553-4a9e-a00f-2fb3c3c5d861",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_4.jpg?alt=media&token=ee0de94a-770f-4ede-93db-9bd38e861fef",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_5.jpg?alt=media&token=125f0080-4330-444b-9350-18fe73e79a40",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_6.jpg?alt=media&token=ae7dd6ba-d09e-4403-9f6a-8c9d39b1fe5f",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_7.jpg?alt=media&token=a5871f7a-9766-4de7-a5e1-1ec8707e7baa",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_8.jpg?alt=media&token=774c04cb-a931-457d-a8ac-7556f888b773",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_9.jpg?alt=media&token=9f0296ae-8458-4ec9-8c85-f0b73a6ded19"
+      ],
+    "id": "Spilva"
   },
   {
     "title": "Roleski",
     "description": "Sauces, mustards and mayonnaise",
-    "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/Roleski.jpeg?alt=media&token=614da322-592e-492d-bf6f-88de7bb3e37e",
-    "id": "product-3"
+    "main_description": "Roleski is a fully family-owned Polish company with more than 40 years of experience in the food industry. The company design and manufacture premium quality products, such as ketchup, mayonnaise, mustard, sauces, dressings, bouillons, marinades and vinegar. Also there are organic certified mustard, ketchup and tomato concentrate products. The strongest side of Roleski is its versatile and outstanding assortment, which is almost uncompetable in many markets.",
+    "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/roleski_products.jpg?alt=media&token=e55f4c2b-4db7-4853-b083-77d42c2c5561",
+    "prev_images": [
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_1.jpg?alt=media&token=6fe8e861-0a50-4d66-83bf-5b91a6ad572a",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_2.jpg?alt=media&token=88b25c7a-5a6c-46bc-b1cb-a73591dd4e54",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_3.jpg?alt=media&token=72ed256f-4ee9-4392-b6f0-c11cd818459d",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_4.jpg?alt=media&token=a7cb2fa2-9164-4bae-8efc-a661477b8668",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_5.jpg?alt=media&token=13c32ed6-5d20-4d08-8e04-e3b779ada210",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_6.jpg?alt=media&token=3af805dd-64e9-4415-a06b-6a45daeaa1ce",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_7.jpg?alt=media&token=d7fcf656-7a5f-446e-a9ab-4fa394256ac3",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_8.jpg?alt=media&token=9bc3063d-7531-4b5b-b400-eaa2102277c4"
+      ],
+    "id": "Roleski"
   },
   {
-    "title": "Novoukrainka",
+    "title": "Novoukraiinka",
     "description": "Oatflakes, muesli, ready-to-eat meals",
-    "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/Novoukrainka.jpeg?alt=media&token=eac93135-9133-4840-a269-3f408f84040d",
-    "id": "product-4"
+    "main_description": "The brand “Novoukrainka” belongs to the agricultural holding engaged in different directions of activity, namely producing and exporting of different types of cereals flakes, mueslis, ready meals etc.The mission is to manufacture and offer to buyers a healthy, ecologically pure, qualitative products, The assortment includes: cereal flakes (oat, buckwheat, barely, rye), cereal flakes with fruits (apple and cinnamon, apricot and raisins, cherry), mueslis. Products are available in carton boxes and soft packaging as well as in carton cups for one serve.",
+    "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/novoukrainka_products.jpg?alt=media&token=35f3233f-b320-414a-83b6-d56909478b0a",
+    "prev_images": [
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fnu_1.jpg?alt=media&token=a49a0053-7ac6-46ce-9944-59de534f0d69",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fnu_2.jpg?alt=media&token=c7eb79ec-a6e3-42e2-ba80-35186594d711",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fnu_3.jpg?alt=media&token=053d2e24-06df-446b-a556-d1b2099eb4d7",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fnu_4.jpg?alt=media&token=0f6c1e4b-7f00-4a02-b859-ac5b621e039a",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fnu_5.jpg?alt=media&token=c2c26c01-4129-4d03-900c-5391500459d0",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fnu_6.jpg?alt=media&token=b192eb25-d655-4a54-ae25-e4dbfb0a2778",
+      "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fnu_7.jpg?alt=media&token=cb47aeca-3968-46cd-bc23-88a4e75d0370"
+      ],
+    "id": "Novoukraiinka"
   }
 ]

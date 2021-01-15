@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import {whiteColor, redColor, lightGray} from '../css/variables';
+import {whiteColor, redColor, lightGray, darkBlue} from '../css/variables';
 
 export const GloabalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:wght@100,500&display=swap');
@@ -48,7 +48,7 @@ export const Container  = styled.div`
 `;
 
 export const Button = styled.button`
-    padding: 20px 30px;
+    padding: 20px 60px;
     border: 1px solid transparent;
     transition: all,background-color .2s ease-out,border-color .2s ease-out;
     font-family: "Work Sans",sans-serif;
@@ -76,6 +76,10 @@ export const Button = styled.button`
         -webkit-transition: all .2s ease-in-out;
         -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: translateY(-50%) scaleX(1.3);
+        }
     }
    
     &::after {
@@ -104,11 +108,10 @@ export const Button = styled.button`
     }
 
     &.secondary {
-        background: ${redColor};
+        background: ${darkBlue};
         color: ${lightGray};
 
         &--modify{
-            width: 170px;
             margin-top: 50px;
         }
 

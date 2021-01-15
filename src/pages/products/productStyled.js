@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
+import {darkBlue} from '../../assets/css/variables';
+
+
 export const ProductStyled = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
     padding-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    ${'' /* grid-gap: 1rem; */}
 `;
 
 export const ProductFigureStyled = styled.img`
@@ -13,15 +16,17 @@ export const ProductFigureStyled = styled.img`
     transition: all .9s;
     width: 210px;
     object-fit: contain;
-    margin-left: 30px;
+    transform: translateX(-50%);
+    margin-left: 50%;
 `;
 
 export const ProductDescriptionStyled = styled.div`
     position: absolute;
     bottom: -185px;
     width: calc(100% - 60px);
-    background: #e01616;
+    background: #24365f;
     color: #fff;
+    text-align: center;
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -44,18 +49,15 @@ export const ProductItemStyled = styled.li`
     cursor: pointer;
     border: 1px solid #0000000f;
     background: #fff;
+    margin: 0 15px;
 
     &:hover {
         ${ProductFigureStyled}{
-            transform: scale(1.1);
+            transform: scale(1.1) translateX(-50%);
         }
         ${ProductDescriptionStyled}{
             bottom: -1px;
         }
-    }
-
-    @media (max-width: 767px) {
-        height: auto;
     }
 `;
 
@@ -77,7 +79,7 @@ export const ContainerWrapper = styled.div`
 export const RightContainer = styled.div`
     margin: 10px 0;
     line-height: 1.733em;
-    border-left: 2px solid #F23801;
+    border-left: 2px solid ${darkBlue};
     padding-left: 30px;
 
     p {
