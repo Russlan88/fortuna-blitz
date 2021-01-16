@@ -5,7 +5,7 @@ import {
 
   import './style.scss';
 
-  import styled from 'styled-components';
+  // import styled from 'styled-components';
 
   import { Button, Container } from '../../assets/css/basic.js';
 
