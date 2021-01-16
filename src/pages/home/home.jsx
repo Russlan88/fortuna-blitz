@@ -1,9 +1,9 @@
 /** @format */
 
 import React from 'react';
-import { BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
-import Products from '../products/products';
+// import Products from '../products/products';
 
 import HomeStyled from './home.js';
 import { Button } from '../../assets/css/basic';
