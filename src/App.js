@@ -2,10 +2,13 @@ import * as React from 'react'
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch,
+  NavLink
 
 } from 'react-router-dom'
+
+import 'reset-css';
+import './main.scss';
 
 import Home from './pages/home/home.jsx';
 import Products from './pages/products/products';
@@ -16,20 +19,19 @@ import {Container} from './assets/css/basic';
 import LogoStyle from './assets/styled-components/logoStyle';
 import NavStyle from './assets/styled-components/navStyle';
 
-
-// import Header from './components/header/header';
-
 export default function App () {
   return (
     <>
       <Router>
-            <Container className="flex">
-              <LogoStyle />
-              <NavStyle>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/products">Products</Link></li>
-                <li><Link to="/contacts">Contacts</Link></li>
-              </NavStyle>
+            <Container>
+              <div className="menu-wrapper">
+                <LogoStyle />
+                <NavStyle>
+                  <li><NavLink to="/" exact activeClassName="active"><span className="item-text">Home</span></NavLink></li>
+                  <li><NavLink to="/products"><span className="item-text">Products</span></NavLink></li>
+                  <li><NavLink to="/contacts"><span className="item-text">Contacts</span></NavLink></li>
+                </NavStyle>
+              </div>
             </Container>
 
       {/* <Header /> */}

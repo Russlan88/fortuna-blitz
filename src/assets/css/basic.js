@@ -60,6 +60,7 @@ export const Button = styled.button`
     letter-spacing: .2em;
     font-weight: 600;
     text-decoration: none;
+    border: none;
     border-radius: 0;
     outline: 0;
     -webkit-transition: all,background-color .2s ease-out,border-color .2s ease-out;
@@ -115,8 +116,8 @@ export const Button = styled.button`
     &.primary{
         margin: 40px 0 35px 15px;
         background: ${lightGray};
-        max-width: 150px;
-        display: block;
+        ${'' /* max-width: 150px; */}
+        display: inline-block;
         }
     }
 
