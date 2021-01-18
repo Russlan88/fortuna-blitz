@@ -32,10 +32,10 @@ const Invoice = () => {
                 ))}
             </ListPreviewStyle>
             <div className="block-cta">
-                <Button as={Link} to="/products" type="submit" className="secondary secondary--modify">
+                <Button as={Link} to="/products"  className="secondary secondary--modify">
               Back
                 </Button>
-                <Button as={Link} to="/contacts" type="submit" className="secondary secondary--modify">
+                <Button as={Link} to="/contacts"  className="secondary secondary--modify">
               Ask for full range and price
                 </Button>
               </div>
