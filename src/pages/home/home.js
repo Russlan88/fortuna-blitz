@@ -5,12 +5,12 @@ import styled from 'styled-components';
 
     @media(min-width: 760px){
         display: grid;
-        grid-template-columns: 40px 780px 1fr; 
+        grid-template-columns:780px 1fr; 
     }
 
     @media(min-width: 1045px){
         display: grid;
-        grid-template-columns: 70px 650px 1fr;
+        grid-template-columns:650px 1fr;
         justify-content: center;
         margin: 0 auto;
         width: 1200px;
@@ -80,7 +80,7 @@ import styled from 'styled-components';
         ${'' /* font-size: 5.7rem; */}
         background: rgba(255,255,255, 0.6);
         font-size: 3rem;
-        margin: 25px 15px 410px 15px;
+        
 
         @media(min-width: 425px) {
             margin: 25px 15px 470px 15px;
@@ -93,6 +93,7 @@ import styled from 'styled-components';
        
         @media(min-width: 725px) {
             margin-bottom: 50px;
+            margin: 25px 0px 50px 0px;
         }
     }
 

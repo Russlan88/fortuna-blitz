@@ -17,11 +17,8 @@ import VisualContainerStyle from '../../assets/styled-components/visualContainer
 const Home = () => {
 	return (
 		<HomeStyled>
-			<div className="first-column">
-				<div className="copyrigth">ITZ</div>
-			</div>
 			<div className="second-column">
-				<h1 className="main-title" style={{color: '#393A3B'}}>Best quality for <span style={{color: '#213562'}}>your market</span></h1>
+				<h1 className="main-title" style={{color: '#393A3B'}}>Best quality products for <span style={{color: '#950740'}}>your market</span></h1>
 				<p className="main-paragraph" style={{
 					fontFamily: "Work Sans",
 					lineHeight: "1.733em",
@@ -35,7 +32,7 @@ Working with Fortuna Blitz you receive a long-term reliable partner with versati
 				</p>
 				<h3>We provide:</h3>
 				<ol className="homeList">
-					<li>Best quality food products and global brands (Heinz)</li>
+					<li>Best quality food products and global brands </li>
 					<li>Individual approach in assortment and pricing policy</li>
 					<li>Logistics and customs processing</li>
 					<li>Transparent partnership on win-win conditions</li>

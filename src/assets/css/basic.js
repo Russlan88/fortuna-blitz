@@ -30,7 +30,7 @@ export const GloabalStyles = createGlobalStyle`
         background-color: ${lightGray};
     }
     body::-webkit-scrollbar-thumb {
-        background-color: ${darkBlue};
+        background-color: #950740;
         outline: 1px solid ${darkBlue};
     }
     
@@ -68,6 +68,8 @@ export const Button = styled.button`
     transition: all,background-color .2s ease-out,border-color .2s ease-out;
     padding: 15px 36px;
     color: #000;
+
+    
 
     &.--contact {
         &::after {
@@ -135,6 +137,10 @@ export const Button = styled.button`
         ${'' /* max-width: 150px; */}
         display: inline-block;
         }
+
+        &:hover {
+       background: #950740;
+    }
     }
 
     &.secondary {
@@ -144,6 +150,10 @@ export const Button = styled.button`
         &--modify{
             margin-top: 50px;
         }
+
+        &:hover {
+       background: #950740;
+    }
 
         
     }

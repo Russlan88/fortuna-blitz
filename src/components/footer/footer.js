@@ -34,6 +34,7 @@ const Footer = () => {
         <div className="footer__bottom-area">
             <div className="footer__layout-item">
                         <h5>Fortuna Blitz location</h5>
+                        <a href="tel:+3728 244 85 88" style={{color: "#e3e2DF", textDecoration: "none"}}>+3728 244 85 88</a>
                         <p>Tallinn</p>
                         <a href="https://goo.gl/maps/MABCKY24FjNg2y3a8" rel="noreferrer" target="_blank" className="footer-link">Harjumaa, Tallinn linn, Narva mnt 13a, 10151</a>
                     </div>

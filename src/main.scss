@@ -35,7 +35,7 @@ h3.product-title {
 	transform: scale(3.1);
 	margin-top: -20px;
 	display: block;
-	fill: #24365f;
+	fill: #950740;
 }
 
 .homeList {
@@ -319,6 +319,7 @@ h3.product-title {
 		display: grid;
 		grid-template-columns: 300px 340px;
 		justify-content: space-between;
+		padding: 0;
 	}
 }
 

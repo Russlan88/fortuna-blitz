@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {darkBlue} from '../../assets/css/variables';
 
 
 const MediaItem = styled.ul`
@@ -39,7 +38,7 @@ const MediaItem = styled.ul`
 			font-size: 11px;
 
 			&:hover {
-				color: ${darkBlue};
+				color: #950740;
 
 				.social-svg-circle circle {
 					-webkit-transform: rotate(55deg);
@@ -88,7 +87,7 @@ const MediaItem = styled.ul`
 				}
 
 				&:last-child {
-					stroke: ${darkBlue};
+					stroke: #950740;
 					stroke-dashoffset: 115;
 					stroke-dasharray: 115;
 				}

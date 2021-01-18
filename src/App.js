@@ -2,6 +2,7 @@ import * as React from 'react'
 import {
   BrowserRouter as Router,
   Route,
+  Link,
   Switch,
   NavLink
 
@@ -28,7 +29,7 @@ export default function App () {
             <GloabalStyles />
             <Container>
               <div className="menu-wrapper">
-                <LogoStyle />
+               <Link to="/"> <LogoStyle /></Link>
                 <NavStyle>
                   <li><NavLink to="/" exact activeClassName="active"><span className="item-text">Home</span></NavLink></li>
                   <li><NavLink to="/products"><span className="item-text">Products</span></NavLink></li>
