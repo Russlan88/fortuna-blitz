@@ -6,7 +6,15 @@ import styled from 'styled-components';
     @media(min-width: 760px){
         display: grid;
         grid-template-columns: 40px 780px 1fr; 
-        }
+    }
+
+    @media(min-width: 1045px){
+        display: grid;
+        grid-template-columns: 70px 650px 1fr;
+        justify-content: center;
+        margin: 0 auto;
+        width: 1200px;
+    }
 
      
 

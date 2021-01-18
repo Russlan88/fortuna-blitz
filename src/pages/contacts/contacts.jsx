@@ -14,10 +14,11 @@ const Contacts = () => {
 			<div className="contacts__main-info">
 				<h3 className="contacts__title">Contact</h3>
 				<h4 className="contacts__subtitle">
-					Lorem ipsum <span>get in touch.</span>
+					Get in touch <span>with us</span>
 				</h4>
 				<p className="contacts__paragraph">
-					Gravida sit amet dolor vel molestie tempor sodales arcu aliquet
+				Fill in the contact form to receive all needed information or you can reach us directly via e-mail,
+telephone or LinkedIn page:
 				</p>
 
 				<SubContainer>

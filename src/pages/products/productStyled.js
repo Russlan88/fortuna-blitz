@@ -23,7 +23,7 @@ export const ProductFigureStyled = styled.img`
 export const ProductDescriptionStyled = styled.div`
     position: absolute;
     bottom: -185px;
-    width: calc(100% - 60px);
+    width: 100%;
     background: #24365f;
     color: #fff;
     text-align: center;

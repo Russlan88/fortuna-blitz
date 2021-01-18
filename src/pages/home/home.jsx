@@ -21,13 +21,26 @@ const Home = () => {
 				<div className="copyrigth">ITZ</div>
 			</div>
 			<div className="second-column">
-				<h1 className="main-title">Best quality for your market</h1>
-				<p className="main-paragraph">
-				Fortuna Blitz is a wholesale trading company, which provides food trade in international markets (Europe, USA, Asia, Africa). The company promotes the products of the world's leading brands (Heinz) in the food industry and also has its own trademarks. 
+				<h1 className="main-title" style={{color: '#393A3B'}}>Best quality for <span style={{color: '#213562'}}>your market</span></h1>
+				<p className="main-paragraph" style={{
+					fontFamily: "Work Sans",
+					lineHeight: "1.733em",
+					textAlign: "left",
+					fontWeight: 300,
+					fontStyle: "normal",
+					width: '500px'
+				}}>
+				Fortuna Blitz is a wholesale trading company, which provides food trade in international markets (Europe, USA, Asia, Africa). The company promotes the products of the world's leading brands (Heinz) in the food industry and also has its own trademarks.<br /><br />
 Working with Fortuna Blitz you receive a long-term reliable partner with versatile assortment who can fulfill consumers’ demands in the best quality food on your market.
-
 				</p>
-			
+				<h3>We provide:</h3>
+				<ol className="homeList">
+					<li>Best quality food products and global brands (Heinz)</li>
+					<li>Individual approach in assortment and pricing policy</li>
+					<li>Logistics and customs processing</li>
+					<li>Transparent partnership on win-win conditions</li>
+				</ol>
+
 				<Button as={Link} to="/products" className="primary">Find out more</Button>
 			</div>
 			<VisualContainerStyle>

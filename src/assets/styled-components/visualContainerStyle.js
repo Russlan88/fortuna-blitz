@@ -16,6 +16,11 @@ const VisualContainerStyle = styled.div`
         top: 110px;
         right: 13vw;
     }
+
+    @media(min-width: 1045px) {
+        right: 50px;
+        transform: scale(1.2);
+    }
     
 `;
 

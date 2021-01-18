@@ -13,20 +13,6 @@ import {
 
 import data from '../../components/data/data.json';
 
-// const GridWrapper = styled.div`
-//   display: grid;
-//     grid-template-columns: 450px 1fr;
-//     grid-gap: 85px;
-//     img {
-//       width: 100%;
-//     }
-//     p {
-//       line-height: 26px;
-//     }
-// `
-
-
-
 const Invoice = () => {
     // @ts-ignore
     const { iid } = useParams()
@@ -38,7 +24,7 @@ const Invoice = () => {
       <div className="single-product-wrapper">
           <img src={img} alt={title}/>
           <div className="product-detals">
-            <h2>{title}</h2>
+            <h2 style={{marginBottom: "35px"}}>{title}</h2>
             <p>{main_description}</p>
               <ListPreviewStyle>
                 {prev_images.map((image, index) => (
