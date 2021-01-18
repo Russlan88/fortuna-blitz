@@ -15,6 +15,7 @@ import Home from './pages/home/home.jsx';
 import Products from './pages/products/products';
 import Contacts from './pages/contacts/contacts.jsx';
 import SingleProduct from './pages/products/single-product';
+import Footer from './components/footer/footer';
 
 import {Container} from './assets/css/basic';
 import LogoStyle from './assets/styled-components/logoStyle';
@@ -22,11 +23,11 @@ import NavStyle from './assets/styled-components/navStyle';
 
 export default function App () {
   return (
-    <>
+    <React.Fragment>
       <Router>
             <GloabalStyles />
             <Container>
-              <div className="menu-wrapper">
+              <div className="menu-wrapper" >
                 <LogoStyle />
                 <NavStyle>
                   <li><NavLink to="/" exact activeClassName="active"><span className="item-text">Home</span></NavLink></li>
@@ -46,6 +47,7 @@ export default function App () {
           </Switch>
         </div>
       </Router>
-    </>
+      <Footer />
+    </React.Fragment>
   )
 }
