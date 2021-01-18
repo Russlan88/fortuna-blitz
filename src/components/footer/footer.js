@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/images/Logo--negative.png';
 import FooterStyle from '../../assets/styled-components/footerStyle';
+import Media from '../media/media.jsx';
 import './footer.scss';
 
 const Footer = () => {
@@ -16,16 +17,17 @@ const Footer = () => {
                     <div className="footer__layout-item">
                         <h5>Want to work with us?</h5>
                         <p>Use this email</p>
-                        <a href="mailto:export@fortunablitz.eu">export@fortunablitz.eu</a>
+                        <a href="mailto:export@fortunablitz.eu" className="footer-link">export@fortunablitz.eu</a>
                     </div>
                     <div className="footer__layout-item">
                         <h5>Want to talk with us?</h5>
                         <p>General inquiries</p>
-                        <a href="mailto:export@fortunablitz.eu">export@fortunablitz.eu</a>
+                        <a href="mailto:export@fortunablitz.eu" className="footer-link">export@fortunablitz.eu</a>
                     </div>
                     <div className="footer__layout-item">
                         <h5>Find us on social media.</h5>
                         <p>Social media</p>
+                        <Media />
                     </div>
             </div>
         </div>
@@ -33,7 +35,7 @@ const Footer = () => {
             <div className="footer__layout-item">
                         <h5>Fortuna Blitz location</h5>
                         <p>Tallinn</p>
-                        <a href="https://goo.gl/maps/MABCKY24FjNg2y3a8" rel="noreferrer" target="_blank">Harjumaa, Tallinn linn, Narva mnt 13a, 10151</a>
+                        <a href="https://goo.gl/maps/MABCKY24FjNg2y3a8" rel="noreferrer" target="_blank" className="footer-link">Harjumaa, Tallinn linn, Narva mnt 13a, 10151</a>
                     </div>
         </div>
         </div>

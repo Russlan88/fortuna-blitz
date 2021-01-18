@@ -22,6 +22,7 @@ const Maps = () => {
 		<MyGreatPlaceWithHover 	
 		// @ts-ignore
 		defaultCenter={{ lat: 59.438431, lng: 24.766538 }}
+		onDragEnd={(e) => e.onMarkerDragEnd({ lat: 59.438431, lng: 24.766538 })}
  	text={'A'} /* Kreyser Avrora */ />
 		</GoogleMapReact>
 	);

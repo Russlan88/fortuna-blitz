@@ -40,8 +40,7 @@ Working with Fortuna Blitz you receive a long-term reliable partner with versati
 					<li>Logistics and customs processing</li>
 					<li>Transparent partnership on win-win conditions</li>
 				</ol>
-
-				<Button as={Link} to="/products" className="primary">Find out more</Button>
+				<Button as={Link} to="/products" className="secondary secondary--modify">Find out more</Button>
 			</div>
 			<VisualContainerStyle>
 				<VisualCaption src_img={VisualFirst} width={'430px'} top={'70px'} right={'40px'}/>

@@ -23,7 +23,15 @@ telephone or LinkedIn page:
 
 				<SubContainer>
 					<Form />
+					<React.Fragment>
+			<div className="general-enquaire">
+				<div className="media-block">
+					<h5 className="secondary-title">Social media</h5>
+					
 					<Media />
+				</div>
+			</div>
+		</React.Fragment>
 				</SubContainer>
 			</div>
 		</ContactsStyle>

@@ -4,10 +4,22 @@ import { blackColor, darkBlue } from '../../assets/css/variables';
 
 export const ContactsStyle = styled.div`
 
-	display: grid;
-	// grid-template-columns: 520px 1fr;
-	grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
-	grid-column-gap: 80px;
+	@media(min-width: 1200px) {
+		display: grid;
+		// grid-template-columns: 520px 1fr;
+		grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+		grid-column-gap: 80px;
+
+	}
+
+
+	> div:first-of-type {
+		height: 450px !important;
+
+		@media(min-width: 1200px) {
+			height: inherit !important;
+		}
+	}
 	
 
 	a {

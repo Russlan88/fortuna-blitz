@@ -69,6 +69,18 @@ export const Button = styled.button`
     padding: 15px 36px;
     color: #000;
 
+    &.--contact {
+        &::after {
+            right: -34px;
+        }
+
+        &:hover {
+            &::after {
+                 right: -45px;
+            }
+        }
+    }
+
     &::before {
         content: "";
         position: absolute;
