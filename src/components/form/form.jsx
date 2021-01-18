@@ -90,7 +90,7 @@ const Form = () => {
 					value={phone}
 					onChange={(e) => setPhone(e.target.value)}
 				/> */}
-				<Button type="submit" className="secondary">
+				<Button type="submit" className="secondary secondary--modify">
 					Submit
 				</Button>
 			</ContactForm>

@@ -27,7 +27,7 @@ export default function App () {
       <Router>
             <GloabalStyles />
             <Container>
-              <div className="menu-wrapper" >
+              <div className="menu-wrapper">
                 <LogoStyle />
                 <NavStyle>
                   <li><NavLink to="/" exact activeClassName="active"><span className="item-text">Home</span></NavLink></li>
