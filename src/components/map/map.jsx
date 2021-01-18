@@ -5,7 +5,9 @@ import GoogleMapReact from 'google-map-react';
 
 import MapFrame from './map.js';
 
+import MyGreatPlaceWithHover from './pin';
 const Maps = () => {
+	
 	return (
 		// Important! Always set the container height explicitly
 
@@ -16,7 +18,12 @@ const Maps = () => {
 			options={{
 				styles: MapFrame,
 			}}
-		></GoogleMapReact>
+		>
+		<MyGreatPlaceWithHover 	
+		// @ts-ignore
+		defaultCenter={{ lat: 59.438431, lng: 24.766538 }}
+ 	text={'A'} /* Kreyser Avrora */ />
+		</GoogleMapReact>
 	);
 };
 

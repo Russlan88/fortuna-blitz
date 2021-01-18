@@ -29,7 +29,7 @@ const Media = () => {
 		<React.Fragment>
 			<div className="general-enquaire">
 				<h3 className="secondary-title">General Inquires</h3>
-				<a href="mailto:fortunablitz@gmail.com">fortunablitz@gmail.com</a>
+				<a href="mailto:export@fortunablitz.eu">export@fortunablitz.eu</a>
 				<div className="media-block" style={{ marginTop: '20px' }}>
 					<h5 className="secondary-title">Social media</h5>
 					<MediaItem>{listItem}</MediaItem>

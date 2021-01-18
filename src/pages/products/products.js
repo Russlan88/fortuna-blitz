@@ -26,7 +26,7 @@ const Products = () => (
     <React.Fragment>
     <GloabalStyles />
     <Container>
-      <h2>Products</h2>
+      <h3 className="product-title">Products</h3>
       <ProductStyled>
             {data.map(({ id, description, img, title }) => (
               <ProductItemStyled key={id}>
@@ -38,7 +38,7 @@ const Products = () => (
             />
             <ProductDescriptionStyled className="products__description single-item">
               <ProductIcon />
-              <h3 className="single-item__title">{title}</h3>
+              <h3 className="single-item__title" style={{color: "#fff"}}>{title}</h3>
               <p className="single-item__description">{description}</p>
             </ProductDescriptionStyled>
             </Link>

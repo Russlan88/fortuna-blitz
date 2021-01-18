@@ -9,6 +9,7 @@ import {
 
 import 'reset-css';
 import './main.scss';
+import {GloabalStyles} from './assets/css/basic';
 
 import Home from './pages/home/home.jsx';
 import Products from './pages/products/products';
@@ -23,6 +24,7 @@ export default function App () {
   return (
     <>
       <Router>
+            <GloabalStyles />
             <Container>
               <div className="menu-wrapper">
                 <LogoStyle />
@@ -35,7 +37,7 @@ export default function App () {
             </Container>
 
       {/* <Header /> */}
-      <div className="main">
+      <div className="main" style={{paddingTop: "25px"}}>
           <Switch>
             <Route exact path='/'><Home /></Route>
             <Route path='/products'><Products /></Route>

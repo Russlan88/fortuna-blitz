@@ -6,6 +6,59 @@ body {
 	box-sizing: border-box;
 }
 
+h3 {
+	font-family: Cormorant, serif;
+	font-weight: 700;
+	letter-spacing: 0;
+	color: #000;
+	font-size: 30px;
+	line-height: 1.067em;
+	margin: 25px 0;
+}
+
+h3.product-title {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 20px;
+	-webkit-letter-spacing: 0.2em;
+	-moz-letter-spacing: 0.2em;
+	-ms-letter-spacing: 0.2em;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #9e9e9e;
+	margin: 0 0 12px;
+	padding-left: 15px;
+}
+
+.pin {
+	transform: scale(3.1);
+	margin-top: -20px;
+	display: block;
+	fill: #24365f;
+}
+
+.homeList {
+	list-style: inside;
+
+	li {
+		font-family: Cormorant;
+		font-size: 22px;
+		line-height: 38px;
+		font-style: italic;
+
+		&::marker {
+			unicode-bidi: isolate;
+			font-variant-numeric: tabular-nums;
+			text-transform: none;
+			text-indent: 0px !important;
+			text-align: start !important;
+			text-align-last: start !important;
+			list-style: initial;
+		}
+	}
+}
+
 @mixin menu-icon {
 	// content: url(https://www.svgrepo.com/show/99025/sauce-bottle.svg);
 	position: absolute;
@@ -34,6 +87,66 @@ body {
 
 	li {
 		list-style: none;
+
+		&:first-child {
+			a {
+				position: relative;
+				display: flex;
+				text-decoration: none;
+				align-items: center;
+				height: 100%;
+				font-family: 'Work Sans', sans-serif;
+				font-size: 15px;
+				line-height: 1.733em;
+				font-weight: 400;
+				color: #000;
+				font-size: 12px;
+				color: #1d1d1d;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+				-webkit-transition: all 0.2s ease-out;
+				-o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+
+				&:hover {
+					&::before {
+						animation: qode-dot-bounce 0.3s forwards linear;
+					}
+				}
+
+				&.active {
+					&::before {
+						content: url('./assets/images/home.svg');
+						@include menu-icon;
+						top: calc(50% - 10px);
+						width: 20px;
+						left: -25px;
+						opacity: 1;
+						-webkit-transition: all 0.2s ease-out;
+						-o-transition: all 0.2s ease-out;
+						transition: all 0.2s ease-out;
+						-webkit-animation: none;
+						animation: none;
+					}
+				}
+
+				&::before {
+					content: url('./assets/images/home.svg');
+					@include menu-icon;
+					top: calc(50% - 10px);
+					width: 20px;
+					left: -25px;
+					opacity: 0;
+					will-change: transform;
+					-webkit-transform-origin: center;
+					-ms-transform-origin: center;
+					transform-origin: center;
+					-webkit-animation: qodef-dot-drop 0.3s forwards ease;
+					animation: qodef-dot-drop 0.3s forwards ease;
+				}
+			}
+		}
 
 		&:nth-child(2) {
 			a {

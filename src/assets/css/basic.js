@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import {whiteColor, redColor, lightGray, darkBlue} from '../css/variables';
+import {whiteColor, lightGray, darkBlue} from '../css/variables';
+import './fonts.css';
 
 export const GloabalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:wght@100,500&display=swap');
@@ -19,7 +20,7 @@ export const GloabalStyles = createGlobalStyle`
 
     ::selection {
         color: ${whiteColor};
-        background: ${redColor};
+        background: ${darkBlue};
     }
 
     body::-webkit-scrollbar {
@@ -29,8 +30,8 @@ export const GloabalStyles = createGlobalStyle`
         background-color: ${lightGray};
     }
     body::-webkit-scrollbar-thumb {
-        background-color: ${redColor};
-        outline: 1px solid ${redColor};
+        background-color: ${darkBlue};
+        outline: 1px solid ${darkBlue};
     }
     
     body{
@@ -38,7 +39,6 @@ export const GloabalStyles = createGlobalStyle`
         font-size: 15px;
         font-weight: 400;
     }
-
 `;
 
 export const Container  = styled.div`
@@ -75,7 +75,7 @@ export const Button = styled.button`
         display: inline-block;
         width: 34px;
         height: 2px;
-        right: -26px;
+        right: -16px;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -83,12 +83,16 @@ export const Button = styled.button`
         font-size: 11px;
         line-height: 1;
         color: #000;
+        background: linear-gradient(90deg,#fff 51%,#000 51%);
         -webkit-transition: all .2s ease-in-out;
         -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
 
         &:hover {
-            transform: translateY(-50%) scaleX(1.3);
+            transform: translateX(30%) translateY(-50%) scaleX(1.3);
+            &::before {
+                 background: linear-gradient(90deg,#fff 28%,#000 28%);
+            }
         }
     }
    
@@ -97,11 +101,11 @@ export const Button = styled.button`
         position: absolute;
         display: inline-block;
         color: #000;
-        top: 33%;
+        top: 32%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        right: -57px;
+        right: -47px;
         width: 34px;
         height: 2px;
         -webkit-transform-origin: left;
@@ -129,9 +133,7 @@ export const Button = styled.button`
             margin-top: 50px;
         }
 
-        &::before {
-            background: linear-gradient(90deg,#fff 50%,#000 50%);
-        }
+        
     }
 
 `;
