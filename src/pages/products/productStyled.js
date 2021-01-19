@@ -7,7 +7,7 @@ export const ProductStyled = styled.ul`
     padding-left: 0px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    ${'' /* grid-gap: 1rem; */}
+   
 `;
 
 export const ProductFigureStyled = styled.img`
@@ -49,7 +49,7 @@ export const ProductItemStyled = styled.li`
     cursor: pointer;
     border: 1px solid #0000000f;
     background: #fff;
-    margin: 0 15px;
+    margin: 15px;
 
     &:hover {
         ${ProductFigureStyled}{

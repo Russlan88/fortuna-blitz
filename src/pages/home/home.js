@@ -13,8 +13,42 @@ import styled from 'styled-components';
         grid-template-columns:650px 1fr;
         justify-content: center;
         margin: 0 auto;
+        ${'' /* width: 1200px; */}
+        width: 100%;
+    }
+
+    @media(min-width: 1200px){
+        display: grid;
+        grid-template-columns:650px 1fr;
+        justify-content: center;
+        margin: 0 auto;
         width: 1200px;
     }
+
+    .homeList {
+	list-style: inside;
+
+	@media (min-width: 725px) {
+		width: 100%;
+	}
+
+	li {
+		font-family: Cormorant;
+		font-size: 22px;
+		line-height: 38px;
+		font-style: italic;
+
+		&::marker {
+			unicode-bidi: isolate;
+			font-variant-numeric: tabular-nums;
+			text-transform: none;
+			text-indent: 0px !important;
+			text-align: start !important;
+			text-align-last: start !important;
+			list-style: initial;
+		}
+	}
+}
 
      
 
@@ -62,9 +96,13 @@ import styled from 'styled-components';
     }
 
     .second-column {
-        ${'' /* align-content: center;
-        display: grid;
-        grid-row-gap: 40px; */}
+        padding: 0 15px;
+        fontFamily: "Work Sans",
+        lineHeight: "1.733em",
+        textAlign: "left",
+        fontWeight: 300,
+        fontStyle: "normal",
+        width: '500px'
 
         @media(max-width: 980px) {
             ${'' /* padding-left: 50px;
@@ -80,6 +118,7 @@ import styled from 'styled-components';
         ${'' /* font-size: 5.7rem; */}
         background: rgba(255,255,255, 0.6);
         font-size: 3rem;
+        margin-bottom: 73vh;
         
 
         @media(min-width: 425px) {
@@ -102,18 +141,19 @@ import styled from 'styled-components';
         font-style: italic;
         text-align: left;
         font-weight: 500;
-        ${'' /* line-height: 38px;
-        letter-spacing: 0px;
-        font-size: 17px; */}
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        background: rgba(255,255,255,0.6);
+        margin: 15px 0;
+        line-height: 30px;
+        font-size: 20px;
+        
 
         @media(min-width:725px) {
-            width: 270px;
+            width: 39vw;
         }
-
-        @media(max-width: 980px) {
-            background: rgba(255,255,255,0.6);
-            margin: 15px;
-            line-height: 30px;
+        @media(min-width:1200px) {
+            width: auto;
         }
     }
 

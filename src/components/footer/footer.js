@@ -31,15 +31,21 @@ const Footer = () => {
 
                         <div className="footer__layout-item">
                             <h5>Want to talk with us?</h5>
-                            <p>General inquiries</p>
-                            <a href="mailto:export@fortunablitz.eu" className="footer-link">export@fortunablitz.eu</a>
+                            <p>Use this phone number</p>
+                            <a href="tel:+3728 244 85 88" style={{color: "#a8a8a8", textDecoration: "none", marginTop: "9px",
+    display: "block"}}>+3728 244 85 88</a>
                         </div>
 
                         {/* call us block */}
 
                         <div className="footer__layout-item">
-                            <h5>Call Us</h5>
-                            <a href="tel:+3728 244 85 88" style={{color: "#e3e2DF", textDecoration: "none"}}>+3728 244 85 88</a>
+                            <h5>Our products</h5>
+                            <ul className="products-list">
+                                <li>Heinz</li>
+                                <li>Spilva</li>
+                                <li>Roleski</li>
+                                <li>Novoukrainka</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -85,7 +85,6 @@ const NavStyle = styled.ul`
             a {
                 &.active {
                     &::before {
-                        ${'' /* content: url(${MailIcon}); */}
                         @media(min-width: 300px) {
                             left: -70px;
                         }
@@ -141,8 +140,6 @@ const NavStyle = styled.ul`
                 fill: #24365f;
             }
         }
-
-        
 
     }
 
