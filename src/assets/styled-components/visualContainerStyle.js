@@ -7,7 +7,7 @@ const VisualContainerStyle = styled.div`
     top: 125px;
 
     @media(min-width: 369px) {
-        top: 85px;
+        top: 12vh;
         right: 30px;
     }
 

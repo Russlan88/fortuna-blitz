@@ -118,7 +118,7 @@ import styled from 'styled-components';
         ${'' /* font-size: 5.7rem; */}
         background: rgba(255,255,255, 0.6);
         font-size: 3rem;
-        margin-bottom: 73vh;
+        margin-bottom: 57vh;
         
 
         @media(min-width: 425px) {
