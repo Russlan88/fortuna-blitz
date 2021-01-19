@@ -3,14 +3,14 @@
 import React from 'react';
 
 import { ContactsStyle, SubContainer } from '../contacts/contactsUs';
-import Maps from '../../components/map/map.jsx';
+import Map from '../../components/map/map.jsx';
 import Form from '../../components/form/form.jsx';
 import Media from '../../components/media/media.jsx';
 
 const Contacts = () => {
 	return (
 		<ContactsStyle>
-			<Maps />
+			<Map />
 			<div className="contacts__main-info">
 				<h3 className="contacts__title">Contact</h3>
 				<h4 className="contacts__subtitle">
@@ -26,8 +26,9 @@ telephone or LinkedIn page:
 					<React.Fragment>
 			<div className="general-enquaire">
 				<div className="media-block">
+					<h5 className="secondary-title">Want to talk with us?</h5>
+					<a href="tel:+3728 244 85 88" style={{marginBottom: "20px", display: "block"}}>+3728 244 85 88</a>
 					<h5 className="secondary-title">Social media</h5>
-					
 					<Media />
 				</div>
 			</div>

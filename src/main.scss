@@ -59,17 +59,6 @@ h3.product-title {
 	}
 }
 
-@mixin menu-icon {
-	// content: url(https://www.svgrepo.com/show/99025/sauce-bottle.svg);
-	position: absolute;
-	top: calc(50% - 13px);
-	height: 10px;
-	width: 24px;
-	left: -25px;
-	fill: #24365f;
-	// border-radius: 100%;
-}
-
 .menu-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -80,95 +69,98 @@ h3.product-title {
 		margin: 25px 0;
 	}
 
-	ul {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-
 	li {
 		list-style: none;
 
+		// &:hover {
+		// 	&::before {
+		// 		animation: qode-dot-bounce 0.3s forwards linear;
+		// 	}
+		// }
+
+		a {
+			// position: relative;
+			// display: flex;
+			// text-decoration: none;
+			// align-items: center;
+			// height: 100%;
+			// font-family: 'Work Sans', sans-serif;
+			// font-size: 15px;
+			// line-height: 1.733em;
+			// font-weight: 400;
+			// color: #000;
+			// font-size: 12px;
+			// color: #1d1d1d;
+			// font-weight: 600;
+			// text-transform: uppercase;
+			// letter-spacing: 0.2em;
+			// -webkit-transition: all 0.2s ease-out;
+			// -o-transition: all 0.2s ease-out;
+			// transition: all 0.2s ease-out;
+
+			&::before {
+				opacity: 0;
+				will-change: transform;
+				-webkit-transform-origin: center;
+				-ms-transform-origin: center;
+				transform-origin: center;
+				-webkit-animation: qodef-dot-drop 0.3s forwards ease;
+				animation: qodef-dot-drop 0.3s forwards ease;
+
+				// left: -75px;
+			}
+
+			&:hover {
+				&::before {
+					animation: qode-dot-bounce 0.3s forwards linear;
+				}
+			}
+
+			&.active {
+				&::before {
+					// content: url('./assets/images/email-icon.svg');
+					opacity: 1;
+					-webkit-transition: all 0.2s ease-out;
+					-o-transition: all 0.2s ease-out;
+					transition: all 0.2s ease-out;
+					-webkit-animation: none;
+					animation: none;
+					// left: -75px;
+				}
+			}
+		}
+
 		&:first-child {
 			a {
-				position: relative;
-				display: flex;
-				text-decoration: none;
-				align-items: center;
-				height: 100%;
-				font-family: 'Work Sans', sans-serif;
-				font-size: 15px;
-				line-height: 1.733em;
-				font-weight: 400;
-				color: #000;
-				font-size: 12px;
-				color: #1d1d1d;
-				font-weight: 600;
-				text-transform: uppercase;
-				letter-spacing: 0.2em;
-				-webkit-transition: all 0.2s ease-out;
-				-o-transition: all 0.2s ease-out;
-				transition: all 0.2s ease-out;
+				&::before {
+					content: url('./assets/images/home.svg');
 
-				&:hover {
-					&::before {
-						animation: qode-dot-bounce 0.3s forwards linear;
-					}
+					width: 20px;
+					top: calc(50% - 20px);
+					// left: -37px;
+					opacity: 0;
+					will-change: transform;
+					transform-origin: center;
+					animation: qodef-dot-drop 0.3s forwards ease;
 				}
 
 				&.active {
 					&::before {
-						content: url('./assets/images/home.svg');
-						@include menu-icon;
-						top: calc(50% - 10px);
+						// content: url('./assets/images/home.svg');
+
 						width: 20px;
-						left: -25px;
+						top: calc(50% - 20px);
+						// left: -37px;
 						opacity: 1;
-						-webkit-transition: all 0.2s ease-out;
-						-o-transition: all 0.2s ease-out;
 						transition: all 0.2s ease-out;
-						-webkit-animation: none;
 						animation: none;
 					}
-				}
-
-				&::before {
-					content: url('./assets/images/home.svg');
-					@include menu-icon;
-					top: calc(50% - 10px);
-					width: 20px;
-					left: -25px;
-					opacity: 0;
-					will-change: transform;
-					-webkit-transform-origin: center;
-					-ms-transform-origin: center;
-					transform-origin: center;
-					-webkit-animation: qodef-dot-drop 0.3s forwards ease;
-					animation: qodef-dot-drop 0.3s forwards ease;
 				}
 			}
 		}
 
 		&:nth-child(2) {
 			a {
-				position: relative;
-				display: flex;
-				text-decoration: none;
-				align-items: center;
-				height: 100%;
-				font-family: 'Work Sans', sans-serif;
-				font-size: 15px;
-				line-height: 1.733em;
-				font-weight: 400;
-				color: #000;
-				font-size: 12px;
-				color: #1d1d1d;
-				font-weight: 600;
-				text-transform: uppercase;
-				letter-spacing: 0.2em;
-				-webkit-transition: all 0.2s ease-out;
-				-o-transition: all 0.2s ease-out;
-				transition: all 0.2s ease-out;
-
 				&:hover {
 					&::before {
 						animation: qode-dot-bounce 0.3s forwards linear;
@@ -177,8 +169,8 @@ h3.product-title {
 
 				&.active {
 					&::before {
-						content: url(https://www.svgrepo.com/show/99025/sauce-bottle.svg);
-						@include menu-icon;
+						// content: url(https://www.svgrepo.com/show/99025/sauce-bottle.svg);
+
 						opacity: 1;
 						-webkit-transition: all 0.2s ease-out;
 						-o-transition: all 0.2s ease-out;
@@ -189,8 +181,8 @@ h3.product-title {
 				}
 
 				&::before {
-					content: url(https://www.svgrepo.com/show/99025/sauce-bottle.svg);
-					@include menu-icon;
+					// content: url(https://www.svgrepo.com/show/99025/sauce-bottle.svg);
+
 					opacity: 0;
 					will-change: transform;
 					-webkit-transform-origin: center;
@@ -203,25 +195,6 @@ h3.product-title {
 		}
 		&:nth-child(3) {
 			a {
-				position: relative;
-				display: flex;
-				text-decoration: none;
-				align-items: center;
-				height: 100%;
-				font-family: 'Work Sans', sans-serif;
-				font-size: 15px;
-				line-height: 1.733em;
-				font-weight: 400;
-				color: #000;
-				font-size: 12px;
-				color: #1d1d1d;
-				font-weight: 600;
-				text-transform: uppercase;
-				letter-spacing: 0.2em;
-				-webkit-transition: all 0.2s ease-out;
-				-o-transition: all 0.2s ease-out;
-				transition: all 0.2s ease-out;
-
 				&:hover {
 					&::before {
 						animation: qode-dot-bounce 0.3s forwards linear;
@@ -230,12 +203,12 @@ h3.product-title {
 
 				&.active {
 					&::before {
-						content: url('./assets/images/email-icon.svg');
-						@include menu-icon;
+						// content: url('./assets/images/email-icon.svg');
+
 						top: calc(50% - 8px);
 						height: 10px;
 						width: 24px;
-						left: -32px;
+						// left: -32px;
 						opacity: 1;
 						-webkit-transition: all 0.2s ease-out;
 						-o-transition: all 0.2s ease-out;
@@ -246,12 +219,12 @@ h3.product-title {
 				}
 
 				&::before {
-					content: url('./assets/images/email-icon.svg');
-					@include menu-icon;
+					// content: url('./assets/images/email-icon.svg');
+
 					top: calc(50% - 8px);
 					height: 10px;
 					width: 24px;
-					left: -32px;
+					// left: -32px;
 					opacity: 0;
 					will-change: transform;
 					-webkit-transform-origin: center;
@@ -262,62 +235,11 @@ h3.product-title {
 				}
 			}
 		}
-
-		a {
-			position: relative;
-			display: flex;
-			text-decoration: none;
-			align-items: center;
-			height: 100%;
-			font-family: 'Work Sans', sans-serif;
-			font-size: 15px;
-			line-height: 1.733em;
-			font-weight: 400;
-			color: #000;
-			font-size: 12px;
-			color: #1d1d1d;
-			font-weight: 600;
-			text-transform: uppercase;
-			letter-spacing: 0.2em;
-			-webkit-transition: all 0.2s ease-out;
-			-o-transition: all 0.2s ease-out;
-			transition: all 0.2s ease-out;
-
-			&:hover {
-				&::before {
-					animation: qode-dot-bounce 0.3s forwards linear;
-				}
-			}
-
-			&.active {
-				&::before {
-					@include menu-icon;
-					content: url('./assets/images/email-icon.svg');
-					opacity: 1;
-					-webkit-transition: all 0.2s ease-out;
-					-o-transition: all 0.2s ease-out;
-					transition: all 0.2s ease-out;
-					-webkit-animation: none;
-					animation: none;
-				}
-			}
-
-			&::before {
-				@include menu-icon;
-				opacity: 0;
-				will-change: transform;
-				-webkit-transform-origin: center;
-				-ms-transform-origin: center;
-				transform-origin: center;
-				-webkit-animation: qodef-dot-drop 0.3s forwards ease;
-				animation: qodef-dot-drop 0.3s forwards ease;
-			}
-		}
 	}
 
 	@media (min-width: 1200px) {
 		display: grid;
-		grid-template-columns: 300px 340px;
+		grid-template-columns: 2fr 405px;
 		justify-content: space-between;
 		padding: 0;
 	}
