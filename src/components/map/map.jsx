@@ -5,7 +5,7 @@ import MapFrame from './map.js';
 import MyGreatPlaceWithHover from './pin';
  
  
-class SimpleMap extends Component {
+class Map extends Component {
   static defaultProps = {
     center: {
       lat: 59.438431,
@@ -37,7 +37,7 @@ class SimpleMap extends Component {
   }
 }
  
-export default SimpleMap;
+export default Map;
 
 // /** @format */
 

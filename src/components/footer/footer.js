@@ -7,40 +7,62 @@ import './footer.scss';
 const Footer = () => {
     return (
         <FooterStyle>
-        <div className="container">
-        <div className="footer__innerWrapper">
-        <div className="footer__top-area">
-            <div className="footer__logo-container">
-               <img src={Logo} className="footer__logo" alt="Fortuna Blitz"/>
-            </div>  
-            <div className="footer__layout">
-                    <div className="footer__layout-item">
-                        <h5>Want to work with us?</h5>
-                        <p>Use this email</p>
-                        <a href="mailto:export@fortunablitz.eu" className="footer-link">export@fortunablitz.eu</a>
+            <div className="container">
+                <div className="footer__innerWrapper">
+
+                    {/* footer logo block */}
+
+                    <div className="footer__top-area">
+                        <div className="footer__logo-container">
+                        <img src={Logo} className="footer__logo" alt="Fortuna Blitz"/>
                     </div>
-                    <div className="footer__layout-item">
-                        <h5>Want to talk with us?</h5>
-                        <p>General inquiries</p>
-                        <a href="mailto:export@fortunablitz.eu" className="footer-link">export@fortunablitz.eu</a>
+
+                    <div className="footer__layout">
+
+                        {/* mail primary block */}
+
+                        <div className="footer__layout-item">
+                            <h5>Want to work with us?</h5>
+                            <p>Use this email</p>
+                            <a href="mailto:export@fortunablitz.eu" className="footer-link">export@fortunablitz.eu</a>
+                        </div>
+
+                        {/* mail secondary block */}
+
+                        <div className="footer__layout-item">
+                            <h5>Want to talk with us?</h5>
+                            <p>General inquiries</p>
+                            <a href="mailto:export@fortunablitz.eu" className="footer-link">export@fortunablitz.eu</a>
+                        </div>
+
+                        {/* call us block */}
+
+                        <div className="footer__layout-item">
+                            <h5>Call Us</h5>
+                            <a href="tel:+3728 244 85 88" style={{color: "#e3e2DF", textDecoration: "none"}}>+3728 244 85 88</a>
+                        </div>
                     </div>
+                </div>
+                    <div className="footer__bottom-area">
+
+                    {/* address block */}
+
+                    <div className="footer__layout-item">
+                        <h5>Fortuna Blitz location</h5>
+                        <p>Tallinn</p>
+                        <a href="https://goo.gl/maps/MABCKY24FjNg2y3a8" rel="noreferrer" target="_blank" className="footer-link">Harjumaa, Tallinn linn,<br /> Narva mnt 13a, 10151</a>
+                    </div>
+
+                    {/* social media block */}
+
                     <div className="footer__layout-item">
                         <h5>Find us on social media.</h5>
                         <p>Social media</p>
                         <Media />
-                    </div>
+                     </div>
+                </div>
             </div>
-        </div>
-        <div className="footer__bottom-area">
-            <div className="footer__layout-item">
-                        <h5>Fortuna Blitz location</h5>
-                        <a href="tel:+3728 244 85 88" style={{color: "#e3e2DF", textDecoration: "none"}}>+3728 244 85 88</a>
-                        <p>Tallinn</p>
-                        <a href="https://goo.gl/maps/MABCKY24FjNg2y3a8" rel="noreferrer" target="_blank" className="footer-link">Harjumaa, Tallinn linn, Narva mnt 13a, 10151</a>
-                    </div>
-        </div>
-        </div>
-        </div>
+            </div>
         </FooterStyle>
     )
 }

@@ -60,7 +60,7 @@ export const ContactsStyle = styled.div`
 	
 	&__paragraph {
 		font-family: 'Cormorant', serif;
-		font-size: 24px;
+		font-size: 23px;
 		font-weight: 500;
 		font-style: italic;
 		line-height: 32px;

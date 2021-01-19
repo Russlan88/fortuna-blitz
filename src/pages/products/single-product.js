@@ -17,7 +17,7 @@ const Invoice = () => {
     // @ts-ignore
     const { iid } = useParams()
     // @ts-ignore
-    const { img, title, main_description, prev_images } = data.find((inv) => inv.id === String(iid))
+    const { img, title, main_description, main_second_paragraph, main_third_paragraph,main_forth_paragraph, prev_images } = data.find((inv) => inv.id === String(iid))
   
     return (
       <Container>
@@ -26,6 +26,9 @@ const Invoice = () => {
           <div className="product-detals">
             <h2 style={{marginBottom: "35px"}}>{title}</h2>
             <p>{main_description}</p>
+            <p>{main_second_paragraph}</p>
+            <p>{main_third_paragraph}</p>
+            <p>{main_forth_paragraph}</p>
               <ListPreviewStyle>
                 {prev_images.map((image, index) => (
                   <li key={index}><img src={image} alt={title}/></li>

@@ -6,6 +6,7 @@ export const ListPreviewStyle = styled.ul`
     grid-gap: 25px;
     align-items: flex-end;
     padding-left: 0;
+    margin-top: 50px;
     margin-bottom: 70px;
 `
 export const ItemPreviewStyle = styled.li`

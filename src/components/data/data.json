@@ -3,7 +3,8 @@
     "id": "Heinz",
     "title": "Heinz",
     "description": "Legendary ketchup, sauces and mayonnaise",
-    "main_description": "Famous for classic tastes for more than 150 years Heinz offers a wide range of high quality products. Heinz has applied all expertise to develop that unmistakable taste of Heinz across the ketchup and sauces range.  Explore the world of iconic ketchup, sauces and condiments in user friendly doy-pack. Yummy, nutritious and convenient, baby food range includes cereals, purees, and ready-to-eat meals. Made of highest quality natural ingredients to make sure your baby gets the best.",
+    "main_description": "Famous for classic tastes for more than 150 years Heinz offers a wide range of high quality products. Heinz has applied all expertise to develop that unmistakable taste of Heinz across the ketchup and sauces range.  Explore the world of iconic ketchup, sauces and condiments in user friendly doy-pack.",
+    "main_second_paragraph": "Yummy, nutritious and convenient, baby food range includes cereals, purees, and ready-to-eat meals. Made of highest quality natural ingredients to make sure your baby gets the best.",
     "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/heinz_products.jpg?alt=media&token=15fd2bd1-8cb9-4eb7-9cbf-1e038b81ddb7",
     "prev_images": [
         "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fheinz_1.jpg?alt=media&token=f37aeef8-5514-45c5-b112-569af7936618",
@@ -17,7 +18,8 @@
   {
     "title": "Spilva",
     "description": "Condiments and canned vegetables",
-    "main_description": "Spilva is a Latvian brand which is famous for its long history and leading positions in sauces and condiments in Europe. Spilva belongs to the holding company “Orkla” - is a leading supplier of branded consumer goods in the Nordic and Baltic regions. The assortment is wide and consists of sauces, dressings, mayonnaisesand canned vegetables. Products are available in doy-packs, glass jars,glass and plastic bottles.",
+    "main_description": "Spilva is a Latvian brand which is famous for its long history and leading positions in sauces and condiments in Europe. Spilva belongs to the holding company “Orkla” - is a leading supplier of branded consumer goods in the Nordic and Baltic regions.",
+    "main_second_paragraph": "The assortment is wide and consists of sauces, dressings, mayonnaisesand canned vegetables. Products are available in doy-packs, glass jars,glass and plastic bottles.",
     "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/spilva_products.jpg?alt=media&token=2bcfb0d0-a20d-4cb0-b54d-df8f7916ab42",
     "prev_images": [
       "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fspilva_1.jpg?alt=media&token=b2023590-eb1e-4e93-bd5e-1d4abc04eeb3",
@@ -35,7 +37,9 @@
   {
     "title": "Roleski",
     "description": "Sauces, mustards and mayonnaise",
-    "main_description": "Roleski is a fully family-owned Polish company with more than 40 years of experience in the food industry. The company design and manufacture premium quality products, such as ketchup, mayonnaise, mustard, sauces, dressings, bouillons, marinades and vinegar. Also there are organic certified mustard, ketchup and tomato concentrate products. The strongest side of Roleski is its versatile and outstanding assortment, which is almost uncompetable in many markets.",
+    "main_description": "Roleski is a fully family-owned Polish company with more than 40 years of experience in the food industry.",
+    "main_second_paragraph": "The company design and manufacture premium quality products, such as ketchup, mayonnaise, mustard, sauces, dressings, bouillons, marinades and vinegar. Also there are organic certified mustard, ketchup and tomato concentrate products.",
+    "main_third_paragraph": "The strongest side of Roleski is its versatile and outstanding assortment, which is almost uncompetable in many markets.",
     "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/roleski_products.jpg?alt=media&token=e55f4c2b-4db7-4853-b083-77d42c2c5561",
     "prev_images": [
       "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Froleski_1.jpg?alt=media&token=6fe8e861-0a50-4d66-83bf-5b91a6ad572a",
@@ -52,7 +56,10 @@
   {
     "title": "Novoukraiinka",
     "description": "Oatflakes, muesli, ready-to-eat meals",
-    "main_description": "The brand “Novoukrainka” belongs to the agricultural holding engaged in different directions of activity, namely producing and exporting of different types of cereals flakes, mueslis, ready meals etc.The mission is to manufacture and offer to buyers a healthy, ecologically pure, qualitative products, The assortment includes: cereal flakes (oat, buckwheat, barely, rye), cereal flakes with fruits (apple and cinnamon, apricot and raisins, cherry), mueslis. Products are available in carton boxes and soft packaging as well as in carton cups for one serve.",
+    "main_description": "The brand “Novoukrainka” belongs to the agricultural holding engaged in different directions of activity, namely producing and exporting of different types of cereals flakes, mueslis, ready meals etc.",
+    "main_second_paragraph": "The mission is to manufacture and offer to buyers a healthy, ecologically pure, qualitative products.",
+    "main_third_paragraph": "The assortment includes: cereal flakes (oat, buckwheat, barely, rye), cereal flakes with fruits (apple and cinnamon, apricot and raisins, cherry), mueslis.",
+    "main_forth_paragraph": "Products are available in carton boxes and soft packaging as well as in carton cups for one serve.",
     "img":"https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/novoukrainka_products.jpg?alt=media&token=35f3233f-b320-414a-83b6-d56909478b0a",
     "prev_images": [
       "https://firebasestorage.googleapis.com/v0/b/fortuna-blitz-contact-form.appspot.com/o/product_preview%2Fnu_1.jpg?alt=media&token=a49a0053-7ac6-46ce-9944-59de534f0d69",
