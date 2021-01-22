@@ -38,6 +38,27 @@ h3.product-title {
 	fill: #950740;
 }
 
+.success {
+	display: none;
+
+	&.active {
+		display: flex;
+		position: fixed;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		width: calc(100% - 40%);
+		height: calc(100% - 40%);
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+		border: 5px solid rgba(12, 179, 54, 0.392);
+		z-index: 9;
+		transition: all 3s;
+	}
+}
+
 .menu-wrapper {
 	display: flex;
 	flex-direction: column;

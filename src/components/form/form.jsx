@@ -26,13 +26,20 @@ const Form = () => {
 				phone: phone,
 			})
 			.then(() => {
-				alert('Message has been submitted!');
+				// @ts-ignore
+			
+				document.querySelector('.success').classList.add('active');
+				setTimeout(() => {
+					document.querySelector('.success').classList.remove('active');
+				  }, 5000);
+				
 			})
 			.catch((error) => {
 				alert(error.message);
 			});
 
 		setName('');
+		setCompanyName('');
 		setEmail('');
 		setMessage('');
 		setPhone('');
@@ -83,7 +90,7 @@ const Form = () => {
 					value={message}
 					onChange={(e) => setMessage(e.target.value)}
 				></textarea>
-
+					<div className="success">Message submitted succesfuly!</div>
 				{/* <input
 					type="tel"
 					placeholder="(___) ___-____"
