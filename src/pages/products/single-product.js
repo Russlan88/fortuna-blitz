@@ -11,7 +11,7 @@ import {
 
   import {ListPreviewStyle} from '../../assets/styled-components/products_preview.js';
 
-import data from '../../components/data/data.json';
+import data from '../../data/data.json';
 
 const Invoice = () => {
     // @ts-ignore

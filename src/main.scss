@@ -71,33 +71,7 @@ h3.product-title {
 
 	li {
 		list-style: none;
-
-		// &:hover {
-		// 	&::before {
-		// 		animation: qode-dot-bounce 0.3s forwards linear;
-		// 	}
-		// }
-
 		a {
-			// position: relative;
-			// display: flex;
-			// text-decoration: none;
-			// align-items: center;
-			// height: 100%;
-			// font-family: 'Work Sans', sans-serif;
-			// font-size: 15px;
-			// line-height: 1.733em;
-			// font-weight: 400;
-			// color: #000;
-			// font-size: 12px;
-			// color: #1d1d1d;
-			// font-weight: 600;
-			// text-transform: uppercase;
-			// letter-spacing: 0.2em;
-			// -webkit-transition: all 0.2s ease-out;
-			// -o-transition: all 0.2s ease-out;
-			// transition: all 0.2s ease-out;
-
 			&::before {
 				opacity: 0;
 				will-change: transform;
@@ -118,14 +92,12 @@ h3.product-title {
 
 			&.active {
 				&::before {
-					// content: url('./assets/images/email-icon.svg');
 					opacity: 1;
 					-webkit-transition: all 0.2s ease-out;
 					-o-transition: all 0.2s ease-out;
 					transition: all 0.2s ease-out;
 					-webkit-animation: none;
 					animation: none;
-					// left: -75px;
 				}
 			}
 		}
@@ -146,8 +118,6 @@ h3.product-title {
 
 				&.active {
 					&::before {
-						// content: url('./assets/images/home.svg');
-
 						width: 20px;
 						top: calc(50% - 20px);
 						// left: -37px;
