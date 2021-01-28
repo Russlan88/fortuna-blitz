@@ -17,7 +17,7 @@ const Visual = (props) => {
                 left: props.leftFinal, 
                 marginTop: props.marginTopFinal,
                 transition: {
-                    duration: 1, 
+                    duration: props.duration, 
                     ease: "easeOut"
                     }
                 },

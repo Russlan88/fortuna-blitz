@@ -36,9 +36,9 @@ Working with Fortuna Blitz you receive a long-term reliable partner with versati
 				<Button as={Link} to="/products" className="secondary secondary--modify">Find out more</Button>
 			</div>
 			<VisualContainerStyle>
-				<VisualCaption opacity={1} topInitial={-90} topFinal={50} initial={0} src_img={VisualFirst} width={'430px'} top={'70px'} right={'40px'}/>
-				<VisualCaption opacity={1} initial={0} src_img={VisualSecond} width={'300px'} top={'150px'} right={'355px'} zIndex={9}/>
-				<VisualCaption opacity={1} marginTop={180} marginTopFinal={'inherit'} src_img={VisualThird} width={'360px'} top={'440px'} right={'140px'}/>
+				<VisualCaption initial={0} opacity={1} duration={1} topInitial={-90} topFinal={50}  src_img={VisualFirst} width={'430px'} top={'70px'} right={'40px'}/>
+				<VisualCaption initial={0} opacity={1} duration={3}  src_img={VisualSecond} width={'300px'} top={'150px'} right={'355px'} zIndex={9}/>
+				<VisualCaption initial={0} opacity={1} duration={4} marginTop={120} marginTopFinal={'inherit'} src_img={VisualThird} width={'360px'} top={'440px'} right={'140px'}/>
 			</VisualContainerStyle>
 		</HomeStyled>
 	);
