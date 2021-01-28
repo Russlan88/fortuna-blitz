@@ -6,7 +6,7 @@ import {
 
   import { GloabalStyles, Container} from '../../assets/css/basic.js';
 
-  import data from '../../components/data/data.json';
+  import data from '../../data/data.json';
   import {
     ProductStyled,
     ProductItemStyled,

@@ -102,14 +102,12 @@ h3.product-title {
 
 			&.active {
 				&::before {
-					// content: url('./assets/images/email-icon.svg');
 					opacity: 1;
 					-webkit-transition: all 0.2s ease-out;
 					-o-transition: all 0.2s ease-out;
 					transition: all 0.2s ease-out;
 					-webkit-animation: none;
 					animation: none;
-					// left: -75px;
 				}
 			}
 		}
@@ -136,8 +134,6 @@ h3.product-title {
 
 				&.active {
 					&::before {
-						// content: url('./assets/images/home.svg');
-
 						width: 20px;
 						top: calc(50% - 22px);
 						// left: -37px;
