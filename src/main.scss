@@ -72,32 +72,16 @@ h3.product-title {
 	li {
 		list-style: none;
 
-		// &:hover {
-		// 	&::before {
-		// 		animation: qode-dot-bounce 0.3s forwards linear;
-		// 	}
-		// }
-
 		a {
-			// position: relative;
-			// display: flex;
-			// text-decoration: none;
-			// align-items: center;
-			// height: 100%;
-			// font-family: 'Work Sans', sans-serif;
-			// font-size: 15px;
-			// line-height: 1.733em;
-			// font-weight: 400;
-			// color: #000;
-			// font-size: 12px;
-			// color: #1d1d1d;
-			// font-weight: 600;
-			// text-transform: uppercase;
-			// letter-spacing: 0.2em;
-			// -webkit-transition: all 0.2s ease-out;
-			// -o-transition: all 0.2s ease-out;
-			// transition: all 0.2s ease-out;
-
+			&:first-child {
+				top: calc(50% - 22px);
+			}
+			&:nth-child(2) {
+				top: -8px;
+			}
+			&:nth-child(3) {
+				top: calc(50% - 8px);
+			}
 			&::before {
 				opacity: 0;
 				will-change: transform;
@@ -132,11 +116,17 @@ h3.product-title {
 
 		&:first-child {
 			a {
+				&:hover {
+					&::before {
+						animation: qode-dot-bounce 0.3s forwards linear;
+					}
+				}
+
 				&::before {
 					content: url('./assets/images/home.svg');
 
 					width: 20px;
-					top: calc(50% - 20px);
+					top: calc(50% - 22px);
 					// left: -37px;
 					opacity: 0;
 					will-change: transform;
@@ -149,7 +139,7 @@ h3.product-title {
 						// content: url('./assets/images/home.svg');
 
 						width: 20px;
-						top: calc(50% - 20px);
+						top: calc(50% - 22px);
 						// left: -37px;
 						opacity: 1;
 						transition: all 0.2s ease-out;
@@ -182,7 +172,7 @@ h3.product-title {
 
 				&::before {
 					// content: url(https://www.svgrepo.com/show/99025/sauce-bottle.svg);
-
+					top: -8px;
 					opacity: 0;
 					will-change: transform;
 					-webkit-transform-origin: center;

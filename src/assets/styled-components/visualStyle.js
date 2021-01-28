@@ -1,7 +1,10 @@
 // @ts-nocheck
 import styled from 'styled-components';
 
-const VisualStyle = styled.img`
+// Framer motion
+import { motion } from 'framer-motion';
+
+const VisualStyle = styled(motion.img)`
     width: ${props => props.width};
     position: absolute;
     top: ${props => props.top};

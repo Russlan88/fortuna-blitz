@@ -3,7 +3,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-// import Products from '../products/products';
+// Framer motion
+import { motion } from 'framer-motion';
+
 
 import HomeStyled from './home.js';
 import { Button } from '../../assets/css/basic';
@@ -15,10 +17,11 @@ import VisualContainerStyle from '../../assets/styled-components/visualContainer
 // import ContactIcon from '../../assets/images/contact__icon.png';
 
 const Home = () => {
+
 	return (
 		<HomeStyled>
 			<div className="second-column">
-				<h1 className="main-title" style={{color: '#393A3B'}}>Best quality products for <span style={{color: '#950740'}}>your market</span></h1>
+				<motion.h1 className="main-title" style={{color: '#393A3B'}}>Best quality products for <span style={{color: '#950740'}}>your market</span></motion.h1>
 				<p className="main-paragraph">
 				Fortuna Blitz is a wholesale trading company, which provides food trade in international markets (Europe, USA, Asia, Africa). The company promotes the products of the world's leading brands (Heinz) in the food industry and also has its own trademarks.<br /><br />
 Working with Fortuna Blitz you receive a long-term reliable partner with versatile assortment who can fulfill consumers’ demands in the best quality food on your market.
@@ -33,9 +36,9 @@ Working with Fortuna Blitz you receive a long-term reliable partner with versati
 				<Button as={Link} to="/products" className="secondary secondary--modify">Find out more</Button>
 			</div>
 			<VisualContainerStyle>
-				<VisualCaption src_img={VisualFirst} width={'430px'} top={'70px'} right={'40px'}/>
-				<VisualCaption src_img={VisualSecond} width={'300px'} top={'150px'} right={'355px'} zIndex={9}/>
-				<VisualCaption src_img={VisualThird} width={'360px'} top={'440px'} right={'140px'}/>
+				<VisualCaption opacity={1} topInitial={-90} topFinal={50} initial={0} src_img={VisualFirst} width={'430px'} top={'70px'} right={'40px'}/>
+				<VisualCaption opacity={1} initial={0} src_img={VisualSecond} width={'300px'} top={'150px'} right={'355px'} zIndex={9}/>
+				<VisualCaption opacity={1} marginTop={180} marginTopFinal={'inherit'} src_img={VisualThird} width={'360px'} top={'440px'} right={'140px'}/>
 			</VisualContainerStyle>
 		</HomeStyled>
 	);

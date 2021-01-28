@@ -127,14 +127,14 @@ const NavStyle = styled.ul`
 
             &:hover {
                 &::before {
-                    animation: qode-dot-bounce 0.3s forwards linear;
+                    animation: 0.3s linear 0s 1 normal forwards running qode-dot-bounce;
                 }
                 
             }
 
             &::before {
                 position: absolute;
-                top: calc(50% - 20px);
+                top: calc(50% - 19px);
                 height: 10px;
                 width: 24px;
                 fill: #24365f;
