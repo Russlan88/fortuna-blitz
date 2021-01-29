@@ -13,12 +13,12 @@ import {
 
 import data from '../../data/data.json';
 
-const Invoice = () => {
+const Invoice = (props) => {
     // @ts-ignore
     const { iid } = useParams()
     // @ts-ignore
     const { img, title, main_description, main_second_paragraph, main_third_paragraph,main_forth_paragraph, prev_images } = data.find((inv) => inv.id === String(iid))
-  
+
     return (
       <Container>
       <div className="single-product-wrapper">

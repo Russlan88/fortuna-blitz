@@ -14,15 +14,9 @@ import {
     ProductDescriptionStyled,
   } from './productStyled.js';
   import { ReactComponent as ProductIcon } from '../../assets/images/product__icon.svg';
- 
-
-// import { Switch, Route } from "react-router-dom";
-// import ListProduct from "../../components/ListProduct";
-// import SingleProduct from "../../components/SingleProduct.js";
-
-
 
 const Products = () => (
+
     <React.Fragment>
     <GloabalStyles />
     <Container>
@@ -47,6 +41,6 @@ const Products = () => (
       </ProductStyled>
       </Container>
     </React.Fragment>
-)
+  )
 
 export default Products;
