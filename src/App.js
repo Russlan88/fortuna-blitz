@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Route,
   Link,
   Switch,
@@ -25,7 +25,7 @@ import NavStyle from './assets/styled-components/navStyle';
 export default function App () {
   return (
     <React.Fragment>
-      <Router>
+      <HashRouter>
             <GloabalStyles />
             <Container>
               <div className="menu-wrapper">
@@ -47,7 +47,7 @@ export default function App () {
             <Route path='/:iid'><SingleProduct /></Route>
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
       <Footer />
     </React.Fragment>
   )

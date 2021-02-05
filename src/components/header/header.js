@@ -19,27 +19,7 @@ import NavStyle from '../../assets/styled-components/navStyle';
 
 // Header
 const Header = () => {
-  return (
-      // <Router>
-      //       <Container className="flex">
-      //         <LogoStyle />
-      //         <NavStyle>
-      //           <li><Link to="/">Home</Link></li>
-      //           <li><Link to="/products">Products</Link></li>
-      //           <li><Link to="/contacts">Contacts</Link></li>
-      //         </NavStyle>
-      //       </Container>
-
-      //   <Container >
-      //     <Switch>
-      //       <Route exact path='/'><Home /></Route>
-      //       <Route path='/products'><Products /></Route>
-      //       <Route path='/contacts'><Contacts /></Route>
-      //       <Route path='/:iid'><SingleProduct /></Route>
-      //     </Switch>
-      //   </Container>
-      // </Router>
-  );
+ 
 }
 
 
