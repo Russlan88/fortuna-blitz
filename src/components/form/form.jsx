@@ -4,10 +4,11 @@
 import React, { useState } from 'react';
 import ContactForm from './form.js';
 import NumberFormat from 'react-number-format';
+import SuccessMessage from '../succes_message/success';
 import { useForm } from "react-hook-form";
 import { db } from '../firebase';
-
 import { Button } from '../../assets/css/basic';
+
 
 const Form = () => {
 	const {errors, register, handleSubmit} = useForm();
@@ -17,7 +18,11 @@ const Form = () => {
 	const [message, setMessage] = useState('');
 	const [phone, setPhone] = useState('');
 
-	const onSubmit = () => {
+	const [visible, setVisible] = useState(true);
+
+	const onSubmit = (e) => {
+
+		setVisible(false);
 
 		db.collection('Contact form Fortuna Blitz')
 			.add({
@@ -28,21 +33,12 @@ const Form = () => {
 				phone: phone,
 			})
 			.then(() => {
-				// @ts-ignore
-				document.querySelector('.success').classList.add('active');
-				setTimeout(() => {
-					document.querySelector('.success').classList.remove('active');
-				  }, 5000);
 			})
 			.catch((error) => {
 				alert(error.message);
 			});
 
-			setName('');
-			setCompanyName('');
-			setEmail('');
-			setMessage('');
-			setPhone('');
+			
 	};
 
 	return (
@@ -51,12 +47,12 @@ const Form = () => {
 			<p className="address-block__paragraph">
 				Harjumaa, Tallinn linn, Narva mnt 13a, 10151
 			</p>
-			<ContactForm className="contact-form" onSubmit={handleSubmit(onSubmit)}>
+			{visible ? 
+			<ContactForm className="contact-form" visible={visible} onSubmit={handleSubmit(onSubmit)}>
 				<input
 					type="text"
 					name="name"
 					placeholder="Your name"
-					value={name}
 					ref={register({ required: true })}
 					onChange={(e) => setName(e.target.value)}
 				/>
@@ -65,7 +61,6 @@ const Form = () => {
 					type="text"
 					name="companyName"
 					placeholder="Full company name"
-					value={companyName}
 					ref={register({ required: true })}
 					onChange={(e) => setCompanyName(e.target.value)}
 				/>
@@ -74,7 +69,6 @@ const Form = () => {
 					type="email"
 					name="mail"
 					placeholder="Email"
-					value={email}
 					ref={register({ required: true,  pattern: /^\S+@\S+$/i })}
 					onChange={(e) => setEmail(e.target.value)}
 				/>
@@ -88,7 +82,6 @@ const Form = () => {
 					type="tel"
 					name="phone_number"
 					placeholder="+__(___) ___-____"
-					value={phone}
 					onChange={(e) => setPhone(e.target.value)}
 					ref={register({ required: true })}
 					allowEmptyFormatting
@@ -99,17 +92,18 @@ const Form = () => {
 				<textarea
 					placeholder="Message"
 					name="message"
-					value={message}
 					ref={register({ required: true })}
 					onChange={(e) => setMessage(e.target.value)}
 				></textarea>
 				{errors.message && <span style={{color: "#bf1650"}}>This field is required</span>}
 
-					<div className="success">Message submitted succesfuly!</div>
+					
 				<Button type="submit" className="secondary secondary--modify --contact">
 					Submit
 				</Button>
-			</ContactForm>
+			</ContactForm> : <SuccessMessage initial={0} opacity={1} />
+
+		}
 		</div>
 	);
 };

@@ -900,7 +900,7 @@ export const Button = styled.button`
         position: absolute;
         display: inline-block;
         color: #000;
-        top: 35%;
+        top: 33%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
