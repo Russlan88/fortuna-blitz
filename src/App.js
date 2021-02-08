@@ -1,54 +1,52 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {
-  HashRouter,
-  Route,
-  Link,
+  BrowserRouter as Router,
   Switch,
-  NavLink
+  Route
 
 } from 'react-router-dom'
 
 import 'reset-css';
 import './main.scss';
-import {GloabalStyles} from './assets/css/basic';
 
+import Preloader from './components/preloader/preloader.jsx';
 import Home from './pages/home/home.jsx';
 import Products from './pages/products/products';
 import Contacts from './pages/contacts/contacts.jsx';
 import SingleProduct from './pages/products/single-product';
+import Header from './components/header/header';
 import Footer from './components/footer/footer';
 
-import {Container} from './assets/css/basic';
-import LogoStyle from './assets/styled-components/logoStyle';
-import NavStyle from './assets/styled-components/navStyle';
+const App = () => {
 
-export default function App () {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=> {
+      setLoading(false)
+    }, 5000)
+  }, [])
   return (
-    <React.Fragment>
-      <HashRouter>
-            <GloabalStyles />
-            <Container>
-              <div className="menu-wrapper">
-               <Link to="/"> <LogoStyle /></Link>
-                <NavStyle>
-                  <li><NavLink to="/" exact activeClassName="active"><span className="item-text">Home</span></NavLink></li>
-                  <li><NavLink to="/products"><span className="item-text">Products</span></NavLink></li>
-                  <li><NavLink to="/contacts"><span className="item-text">Contacts</span></NavLink></li>
-                </NavStyle>
-              </div>
-            </Container>
-
-      {/* <Header /> */}
-      <div className="main" style={{paddingTop: "25px"}}>
-          <Switch>
-            <Route exact path='/'><Home /></Route>
-            <Route path='/products'><Products /></Route>
-            <Route path='/contacts'><Contacts /></Route>
-            <Route path='/:iid'><SingleProduct /></Route>
-          </Switch>
-        </div>
-      </HashRouter>
-      <Footer />
+    <React.Fragment>    {
+      loading ? (<Preloader />) :
+      (
+        <React.Fragment>
+              <Router>
+                <Header />
+                <Switch>
+                  <Route exact path='/'><Home /></Route>
+                  <Route path='/products'><Products /></Route>
+                  <Route path='/contacts'><Contacts /></Route>
+                  <Route path='/:iid'><SingleProduct /></Route>
+                </Switch>
+              </Router>
+              <Footer />
+          </React.Fragment>
+      )
+    }
     </React.Fragment>
   )
 }
+
+export default App;

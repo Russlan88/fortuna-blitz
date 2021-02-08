@@ -12,11 +12,11 @@ const PreloaderStyle = styled.div`
 
 
     .loader {
-  max-width: 15rem;
-  width: 100%;
-  height: auto;
-  stroke-linecap: round;
-}
+      max-width: 15rem;
+      width: 100%;
+      height: auto;
+      stroke-linecap: round;
+    }
 
 circle {
   fill: none;
